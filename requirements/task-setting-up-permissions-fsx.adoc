@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: requirements/task-setting-up-permissions-fsx.html 
+keywords: fsx for ontap, iam, user role, permissions 
+summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要为具有 FSX for ONTAP 权限的 IAM 用户角色提供 AWS 访问密钥和机密密钥。 
+---
+= 为适用于 ONTAP 的 FSX 设置权限
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要通过提供 IAM 角色的 ARN 将 AWS 凭据添加到 Cloud Manager ，以便为 Cloud Manager 提供创建适用于 ONTAP 的 FSX 工作环境所需的权限。
+
+
+
+== 设置 IAM 角色
+
+设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色。
+
+.步骤
+. 转到目标帐户中的 IAM 控制台。
+. 在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
++
+请务必执行以下操作：
+
++
+** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
+** 选择 * 其他 AWS 帐户 * 并输入 Cloud Manager SaaS 的 ID ： 952013314444
+** 创建包含以下权限的策略：
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "fsx:*",
+                "ec2:Describe*",
+                "ec2:CreateTags",
+                "kms:Describe*",
+                "kms:List*",
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+
+
+. 复制 IAM 角色的角色 ARN ，以便您可以在下一步将其粘贴到 Cloud Manager 中。
+
+
+IAM 角色现在具有所需的权限。
+
+
+
+== 添加凭据
+
+为 IAM 角色提供所需权限后，将角色 ARN 添加到 Cloud Manager 中。
+
+如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟，然后再将凭据添加到 Cloud Manager 。
+
+.步骤
+. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
++
+image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+
+. 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
++
+.. * 凭据位置 * ：选择 * Amazon Web Services > Cloud Manager* 。
+.. * 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。
+.. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
+
+
+
+
+现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。
+
+
+
+== 相关链接
+
+* https://docs.netapp.com/us-en/cloud-manager-get-started/concept-accounts-aws.html["AWS 凭据和权限"^]
+* https://docs.netapp.com/us-en/cloud-manager-get-started/task-adding-aws-accounts.html["管理 Cloud Manager 的 AWS 凭据"^]
+

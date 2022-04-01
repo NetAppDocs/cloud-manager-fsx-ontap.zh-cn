@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-fsx-volumes.html 
+keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
+summary: 您可以使用 Cloud Manager 管理卷，克隆和快照，并更改适用于 ONTAP 的 FSX 的分层策略。 
+---
+= 管理适用于 ONTAP 的 Amazon FSX 的卷
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Cloud Manager 管理卷，克隆和快照，并更改适用于 ONTAP 的 FSX 的分层策略。
+
+
+
+== 编辑卷
+
+创建卷后，您可以随时对其进行修改。
+
+.步骤
+. 打开工作环境。
+. 打开卷菜单并选择 * 编辑 * 。
++
+.. 对于 NFS ，您可以修改大小和标记。
+.. 对于 CIFS ，您可以根据需要修改共享名称，用户，权限和 Snapshot 策略。
+
+
+. 单击 * 应用 * 。
+
+
+
+
+== 克隆卷
+
+创建卷后，您可以从新 Snapshot 创建新的读写卷。
+
+.步骤
+. 打开工作环境。
+. 打开卷菜单并选择 * 克隆 * 。
+. 输入克隆卷的名称。
+. 单击 * 克隆 * 。
+
+
+
+
+== 管理 Snapshot 副本
+
+Snapshot 副本可为卷提供时间点副本。创建 Snapshot 副本并将数据还原到新卷。
+
+.步骤
+. 打开工作环境。
+. 打开卷菜单，然后选择一个可用选项来管理 Snapshot 副本：
++
+** * 创建 Snapshot 副本 *
+** * 从 Snapshot 副本还原 *
+
+
+. 按照提示完成选定操作。
+
+
+
+
+== 更改分层策略
+
+更改卷的分层策略。
+
+.步骤
+. 打开工作环境。
+. 打开卷菜单并选择 * 更改分层策略 * 。
+. 选择一个新的卷分层策略，然后单击 * 更改 * 。
+
+
+
+
+== 复制和同步数据
+
+您可以使用 Cloud Manager 在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见 https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html["在系统之间复制数据"^]。
+
+您可以在 Cloud Manager 中使用 Cloud Sync 创建同步关系。要配置同步关系，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html["创建同步关系"^]。
+
+
+
+== 删除卷
+
+删除不再需要的卷。
+
+您不能使用 Cloud Manager 删除先前属于 SnapMirror 关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。
+
+.步骤
+. 打开工作环境。
+. 打开卷菜单并选择 * 删除 * 。
+. 输入工作环境名称并确认要删除此卷。从 Cloud Manager 中完全删除卷可能需要长达一小时的时间。
+
+
+
+NOTE: 如果您尝试删除克隆的卷，则会收到错误。

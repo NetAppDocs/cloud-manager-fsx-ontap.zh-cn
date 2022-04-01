@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: start/task-getting-started-fsx.html 
+keywords: amazon fsx for ontap, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create 
+summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。 
+---
+= 开始使用适用于 ONTAP 的 Amazon FSX
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
+
+只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。
+
+[role="quick-margin-para"]
+在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 link:requirements/task_setting_up_permissions_fsx.html["设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色"]。
+
+[role="quick-margin-para"]
+您必须具有 https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html["适用于 AWS 的连接器"^] 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用 Connector ， Cloud Manager 将提示您是否尚未添加。
+
+[role="quick-margin-para"]
+您可以使用 Cloud Manager 为 ONTAP 卷创建 FSX 。
+
+[role="quick-margin-para"]
+使用 Cloud Manager 管理卷并配置其他服务，例如复制， Cloud Sync 和 Data sense 。
+
+.相关链接
+* https://docs.netapp.com/us-en/cloud-manager-get-started/task-creating-connectors-aws.html["使用 Cloud Manager 创建连接器"^]
+* https://docs.netapp.com/us-en/cloud-manager-get-started/task-launching-aws-mktp.html["从 AWS Marketplace 启动 Connector"^]
+* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html["在 Linux 主机上安装 Connector 软件"^]
+

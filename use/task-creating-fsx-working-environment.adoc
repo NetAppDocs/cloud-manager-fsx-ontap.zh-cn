@@ -1,0 +1,175 @@
+---
+sidebar: sidebar 
+permalink: use/task-creating-fsx-working-environment.html 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment 
+summary: 通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。 
+---
+= 创建和管理适用于 ONTAP 的 Amazon FSX 工作环境
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 Cloud Manager ，您可以创建和管理适用于 ONTAP 的 FSX 工作环境，以添加和管理卷和其他数据服务。
+
+
+
+== 创建适用于 ONTAP 的 Amazon FSX 工作环境
+
+第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["使用 Cloud Manager 发现它"]。
+
+在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：
+
+* IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 link:task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
+* 要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。
+
+
+.步骤
+. 在 Cloud Manager 中，添加一个新的工作环境，选择位置 * Amazon Web Services* ，然后单击 * 下一步 * 。
+. 选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 下一步 * 。
++
+image:screenshot_add_fsx_working_env.png["为适用于 ONTAP 的 Amazon FSX 添加工作环境的屏幕截图"]
+
+. 在 Cloud Manager 中对适用于 ONTAP 的 FSX 进行身份验证。
++
+.. 如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。
++
+image:screenshot-fsx-assume-role-present.png["显示 AWS 角色下拉列表的屏幕截图"]
+
+.. 如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 link:task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
++
+image:screenshot-fsx-assume-role-not-present.png["为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。"]
+
+
+
+. 提供有关适用于 ONTAP 的 FSX 实例的信息：
++
+.. 输入要使用的工作环境名称。
+.. 您也可以单击加号并输入标记名称和值来创建标记。
+.. 输入并确认要使用的 ONTAP 集群密码。
+.. 选择此选项可对 SVM 用户使用相同的密码或设置不同的密码。
+.. 单击 * 下一步 * 。
++
+image:screenshot_add_fsx_credentials.png["为适用于 ONTAP 的 FSX 添加凭据的屏幕截图"]
+
+
+
+. 提供区域和 VPC 信息：
++
+.. 选择一个区域和子网至少位于两个可用性区域中的 VPC ，以便每个节点都位于一个专用可用性区域中。
+.. 接受默认安全组或选择其他安全组。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
+.. 为每个节点选择可用性区域和子网。
+.. 单击 * 下一步 * 。
++
+image:screenshot_add_fsx_region.png["为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图"]
+
+
+
+. 保留 _CIDR Range_ 为空，然后单击 * 下一步 * 以自动设置可用范围。您也可以选择使用 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 传输网关"^] 手动配置范围。
++
+image:screenshot_add_fsx_floatingIP.png["为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图"]
+
+. 选择包含到浮动 IP 地址的路由的路由表。如果 VPC 中的子网只有一个路由表（主路由表），则 Cloud Manager 会自动将浮动 IP 地址添加到该路由表中。单击 * 下一步 * 继续。
++
+image:screenshot_add_fsx_route_table.png["为 ONTAP 的 FSX 选择路由表的屏幕截图"]
+
+. 接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html["设置 AWS KMS"^]。单击 * 下一步 * 继续。
++
+image:screenshot_add_fsx_encryption.png["为适用于 ONTAP 的 FSX 设置默认主密钥的屏幕截图"]
+
+. 配置存储：
++
+.. 选择吞吐量，容量和单位。
+.. 您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。
++
+
+WARNING: 如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。image:screenshot_fsx_working_environment_failed_iops.png["如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。"]
+
+.. 单击 * 下一步 * 。image:screenshot_add_fsx_storage_config.png["为适用于 ONTAP 的 FSX 设置存储配置的屏幕截图"]
+
+
+. 查看您的配置：
++
+.. 单击选项卡以查看 ONTAP 属性，提供程序属性和网络配置。
+.. 单击 * 上一步 * 以更改任何设置。
+.. 单击 * 添加 * 以接受设置并创建工作环境。
++
+image:screenshot_add_fsx_review.png["查看适用于 ONTAP 的 FSX 设置的屏幕截图"]
+
+
+
+
+
+Cloud Manager 会在 " 画布 " 页面上显示适用于 ONTAP 的 FSX 配置。
+
+image:screenshot_add_fsx_cloud.png["工作环境页面上的 Amazon FSX for ONTAP 屏幕截图。"]
+
+现在，您可以使用 Cloud Manager 将卷添加到适用于 ONTAP 的 FSX 工作环境中。
+
+
+
+== 发现适用于 ONTAP 的现有 FSX 文件系统
+
+如果您使用 AWS 管理控制台创建了适用于 ONTAP 的 FSX 文件系统，或者您希望还原之前删除的工作环境，则可以使用 Cloud Manager 发现它。
+
+.步骤
+. 在 Cloud Manager 中，单击 * 添加工作环境 * ，然后选择 * Amazon Web Services* 。
+. 选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 单击此处 * 。
++
+image:screenshot_fsx_working_environment_discover.png["发现适用于 ONTAP 的 Amazon FSX 的工作环境的屏幕截图"]
+
+. 选择现有凭据或创建新凭据。单击 * 下一步 * 。
+. 选择要添加的 AWS 区域和工作环境。
++
+image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
+
+. 单击 * 添加 * 。
+
+
+Cloud Manager 将显示您发现的适用于 ONTAP 文件系统的 FSX 。
+
+
+
+== 从工作空间中删除适用于 ONTAP 的 FSX
+
+您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。
+
+.步骤
+. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
+. 在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。
++
+image:screenshot_fsx_working_environment_remove.png["Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。"]
+
+. 单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
+
+
+
+
+== 删除适用于 ONTAP 的 FSX 工作环境
+
+您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
+
+.开始之前
+* 您必须 link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。
+
+
+
+NOTE: 要删除卷，您需要在 AWS 中使用活动的 Connector 。
+
+* 您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。
+
+
+
+WARNING: 此操作将删除与工作环境关联的所有资源。此操作无法撤消。
+
+.步骤
+. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
+. 在页面右上角，选择操作菜单，然后单击 * 删除 * 。
++
+image:screenshot_fsx_working_environment_delete.png["通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。"]
+
+. 输入工作环境的名称，然后单击 * 删除 * 。
+

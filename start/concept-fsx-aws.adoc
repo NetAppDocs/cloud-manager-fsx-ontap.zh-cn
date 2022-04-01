@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: start/concept-fsx-aws.html 
+keywords: amazon fsx for ontap, volumes, aws, access key, secret key 
+summary: Amazon FSX for ONTAP 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户目前在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的精简性，灵活性，安全性和可扩展性。 
+---
+= 了解适用于 ONTAP 的 Amazon FSX
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["适用于 ONTAP 的 Amazon FSX"^] 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。
+
+
+
+== 功能
+
+* 无需配置或管理存储设备，软件或备份。
+* 支持 CIFS ， NFSv3 ， NFSv4.x 和 SMB v2.0 - v3.1.1 协议。
+* 使用可用的不常访问（ IA ）存储层，可实现低成本，几乎无限制的数据存储容量。
+* 经过认证，可在延迟敏感型应用程序上运行，包括 Oracle RAC 。
+* 可选择捆绑定价和按需购买定价
+
+
+
+
+== Cloud Manager 中的其他功能
+
+* 使用 AWS 和 Cloud Manager 中的连接器，您可以创建和管理卷，复制数据，并将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。
+* 利用人工智能（ AI ）驱动的技术，云数据感知可以帮助您了解数据环境，并识别 FSX for ONTAP 帐户中的敏感数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["了解更多信息。"^]。
+* 使用 NetApp Cloud Sync ，您可以自动将数据迁移到云中或内部环境中的任何目标。 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["了解更多信息。"^]
+
+
+
+
+== 成本
+
+您的 FSX for ONTAP 帐户由 AWS 维护，而不是由 Cloud Manager 维护。 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["《适用于 ONTAP 的 Amazon FSX 入门指南》"^]
+
+在 AWS 中使用连接器以及 Cloud Sync 和 Data sense 等可选数据服务会产生额外成本。
+
+
+
+== 支持的区域
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["查看支持的 Amazon 地区。"^]
+
+
+
+== 获取帮助
+
+Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系统，基础架构或使用此服务的任何 AWS 解决方案相关的问题或技术支持问题，请使用 AWS 控制台中的支持中心向 AWS 创建支持案例。选择 "FSX for ONTAP " 服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。
+
+对于 Cloud Manager 或 Cloud Manager 微服务特有的一般问题，您可以从在线 Cloud Manager 聊天开始。
+
+对于 Cloud Manager 或中的微服务特有的技术支持问题，您可以使用 Cloud Manager 帐户级别序列号打开 NetApp 支持服务单。您需要注册 Cloud Manager 序列号才能激活支持。
+
+
+
+== 限制
+
+* Cloud Manager 只能将数据从内部或 Cloud Volumes ONTAP 复制到适用于 ONTAP 的 FSX 。
+* 此时，可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷。
+

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
+  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
+  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
+  <block id="27210695b4aa1995052b8f142c07c5f6" category="summary">了解适用于 ONTAP 的 Amazon FSX 的新增功能。</block>
+  <block id="a04f5ee3ae030d60ed2d9e76b7b821ff" category="doc">适用于 ONTAP 的 Amazon FSX 的新增功能</block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
+  <block id="3152521594c71809f9c72383294b05b7" category="section-title">承担 IAM 角色</block>
+  <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">在创建适用于 ONTAP 的 FSX 工作环境时，您现在必须提供一个 IAM 角色的 ARN ， Cloud Manager 可以使用此 ARN 来创建适用于 ONTAP 的 FSX 工作环境。您以前需要提供 AWS 访问密钥。</block>
+  <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">了解如何为适用于 ONTAP 的 FSX 设置权限</block>
+  <block id="13e5c10c795e686e29eadb40176673c7" category="paragraph"><block ref="cf631a156cd347f4c5596cb7048bba9e" category="inline-link-macro-rx"></block>。</block>
+  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
+  <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">使用 Cloud Manager API 创建 iSCSI 卷</block>
+  <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">您可以使用 Cloud Manager API 为适用于 ONTAP 的 FSX 创建 iSCSI 卷，并在您的工作环境中对其进行管理。</block>
+  <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">创建卷时选择卷单元</block>
+  <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">创建卷时，请选择卷单位（ GiB 或 TiB ）</block>
+  <block id="da22f48d59f2fa57df49bc6c518d4ea3" category="paragraph">您可以 <block ref="efd00606ea840f5daa498a5838165877" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
+  <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">使用 Cloud Manager 创建 CIFS 卷</block>
+  <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">使用 Cloud Manager 在适用于 ONTAP 的 FSX 中创建 CIFS 卷</block>
+  <block id="dd2965fdd58c782fcb7aa8377a7b2d12" category="paragraph">现在可以了 <block ref="a32b1ce0bbebafb6ae37c1c71466c875" category="inline-link-macro-rx"></block>。</block>
+  <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">使用 Cloud Manager 编辑卷</block>
+  <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">使用 Cloud Manager 编辑 ONTAP 卷的 FSX</block>
+  <block id="bcdfd7c9df2a00f5b0ec2f5821dbf7b0" category="paragraph">现在可以了 <block ref="899a64d6d124f6c482bcc934f2596bd7" category="inline-link-macro-rx"></block>。</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
+  <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">支持适用于 ONTAP 的 Amazon FSX</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
+  <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。</block>
+  <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link-macro">了解适用于 ONTAP 的 Amazon FSX</block>
+  <block id="3ad7a391899f410f6c691f04c5fc29dc" category="paragraph"><block ref="28ccfcf4ae259f2c2c90423cda2e679d" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">您可以在 Cloud Manager 中配置适用于 ONTAP 的 FSX 工作环境。</block>
+  <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="inline-link-macro">创建适用于 ONTAP 的 Amazon FSX 工作环境</block>
+  <block id="9f5231696fe1247c1c174f8df3236567" category="paragraph"><block ref="4296fbdd4f0f53e33c6e1d55bda55b15" category="inline-link-macro-rx"></block>。</block>
+  <block id="7965f44d9657c905774d8d427141b845" category="list-text">使用 AWS 和 Cloud Manager 中的连接器，您可以创建和管理卷，复制数据，并将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。</block>
+  <block id="eddf71c2364cb70dc54a32723a344817" category="inline-link-macro">开始使用适用于 Amazon FSX for ONTAP 的 Cloud Data sense</block>
+  <block id="deb4ff1d98dec32cf90245eadfe9d5fb" category="paragraph"><block ref="f040423cd4b5eeaa8e9ebfeeb9fc3ca2" category="inline-link-macro-rx"></block>。</block>
+  <block id="f72448d4491d54800c0487b0482fd149" category="summary">设置工作环境后，您可以创建和管理适用于 ONTAP 卷，克隆和快照的 Amazon FSx ，更改分层策略以及删除适用于 ONTAP 的 FSx 。</block>
+  <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">为适用于 ONTAP 的 Amazon FSX 创建卷</block>
+  <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">设置工作环境后，您可以为 ONTAP 卷创建和挂载 FSX 。</block>
+  <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">创建卷</block>
+  <block id="59882fc1ce16f5b47ed90394ec3dcd4a" category="paragraph">您可以在 Cloud Manager 中从适用于 ONTAP 的 FSX 工作环境创建和管理 NFS 和 CIFS 卷。使用 ONTAP 命令行界面创建的 NFS 和 CIFS 卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</block>
+  <block id="3c5b27df21b3db8fbf99260b6111c620" category="paragraph">您可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷，并在适用于 ONTAP 的 FSX 工作环境中使用 Cloud Manager 管理这些卷。</block>
+  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">您需要：</block>
+  <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS 中的连接器</block>
+  <block id="9715c6c76185fc55127d177e360e9385" category="list-text">活动<block ref="619cc03f7b60a7ffb6c9bc0f703dc5ac" category="inline-link-rx"></block>。</block>
+  <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：使用自管理 Microsoft AD 的前提条件</block>
+  <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">如果要使用 SMB 、必须设置 DNS 和 Active Directory 。有关 DNS 和 Active Directory 网络配置的详细信息，请参见 <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
+  <block id="5f1502c18596a814041ff3a5f4953b39" category="list-text">打开适用于 ONTAP 的 FSX 工作环境。</block>
+  <block id="8bb933964e44d095412ffc5c20dc6cd4" category="list-text">如果未启用 Connector ，系统将提示您添加一个。</block>
+  <block id="e5269a85a2cb3cf98fc7a82c3a558211" category="inline-image-macro">适用于 ONTAP 连接器的 FSX 提示符的屏幕截图。</block>
+  <block id="5890e0ca1f9df3cd1ea6270dc6c67d05" category="paragraph"><block ref="5890e0ca1f9df3cd1ea6270dc6c67d05" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="811f08ec14bddf12bb95cd5465790a18" category="list-text">单击 * 卷 * 选项卡</block>
+  <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">单击 * 添加卷 * 。</block>
+  <block id="e76e0d2c6703e75c3666c67d2b185919" category="inline-image-macro">适用于 ONTAP 卷的 FSX 选项卡的屏幕截图。</block>
+  <block id="638a4176be76c6cf595776403405ef92" category="paragraph"><block ref="638a4176be76c6cf595776403405ef92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77c018c319fffd489ece68e7e9f933e3" category="list-text">* 卷详细信息和保护 * ：</block>
+  <block id="2165a478df3c7cdbb020957742f7a396" category="list-text">输入新卷的名称。</block>
+  <block id="8a7a21842c95be5ef7cf8fb45e457fbb" category="list-text">Storage VM （ SVM ）字段会根据工作环境的名称自动填充 SVM 。</block>
+  <block id="09d72555d9ef793670cfd52c3b29a5a9" category="list-text">输入卷大小并选择一个单位（ GiB 或 TiB ）。请注意，卷大小将随使用量增长而增加。</block>
+  <block id="67cab8c7d29423fd822eaba3b1d1ad3e" category="list-text">选择快照策略。默认情况下，每小时（保留最后六个副本），每天（保留最后两个副本）和每周（保留最后两个副本）创建一个快照。</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
+  <block id="4b1ceb73f69790897d4632ba712c7659" category="inline-image-macro">用于创建 ONTAP 卷的 FSX 的卷详细信息和保护字段的屏幕截图。</block>
+  <block id="5d40ada61a97a98ef6bc45b298d20ee3" category="paragraph"><block ref="5d40ada61a97a98ef6bc45b298d20ee3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf6c6b2753126136892e2e302ab0f03d" category="list-text">* 协议 * ：选择 NFS 或 CIFS 卷协议。</block>
+  <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">对于 NFS ：</block>
+  <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">选择访问控制策略。</block>
+  <block id="b07a5c1cd32beac9e88c78df72edc8ec" category="list-text">选择 NFS 版本。</block>
+  <block id="fc103acdd0c976c704dfea17981b4304" category="list-text">选择自定义导出策略。单击信息图标以查看有效值条件。</block>
+  <block id="f2ee46b3a1c0e7f976a1164a6ca75f9e" category="inline-image-macro">用于创建 ONTAP 卷的 NFS 配置 FSX 的屏幕截图。</block>
+  <block id="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="paragraph"><block ref="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83b83892341426df7b542344aa75ca76" category="list-text">对于 CIFS ：</block>
+  <block id="2ab8185476c6aa2340579384597cb230" category="list-text">输入共享名称。</block>
+  <block id="e5de5245ec2c46e9d548be02749c8dc0" category="list-text">输入以分号分隔的用户或组。</block>
+  <block id="4b84f0c5fc5c7b04da02e0f060ce5ce5" category="list-text">选择卷的权限级别。</block>
+  <block id="46e8ceffdf7a4b1aacfa09a39d99e67c" category="paragraph"><block ref="46e8ceffdf7a4b1aacfa09a39d99e67c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e933d10896e213582c2864ce4ca0f276" category="admonition">如果这是此工作环境中的第一个 CIFS 卷，则系统将提示您使用 _Active Directory_ 或 _Workgroup_ 设置配置 CIFS 连接。</block>
+  <block id="6f9872e6257b850cf12c8d7cb5b9f8b8" category="list-text">如果选择 Active Directory 设置，则需要提供以下配置信息。</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">字段</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="9d35762d6cb446294ba4226fba0d1eb5" category="cell">DNS 主 IP 地址</block>
+  <block id="123a30d033bf12586c81d5b70356c536" category="cell">为 CIFS 服务器提供名称解析的 DNS 服务器的 IP 地址。列出的 DNS 服务器必须包含为 CIFS 服务器将加入的域查找 Active Directory LDAP 服务器和域控制器所需的服务位置记录（ SRV ）。</block>
+  <block id="b4a5aaff47ac1aad0a039f0089aac0c6" category="cell">要加入的 Active Directory 域</block>
+  <block id="bdb1f2fed183dbc7963363bc018c71e6" category="cell">希望 CIFS 服务器加入的 Active Directory （ AD ）域的 FQDN 。</block>
+  <block id="a3bbc956ff81e28dd77efaaf4d1c5b30" category="cell">授权加入域的凭据</block>
+  <block id="03fa572f48ef7f33b022f609e0553e85" category="cell">具有足够权限将计算机添加到 AD 域中指定组织单位 (OU) 的 Windows 帐户的名称和密码。</block>
+  <block id="2f9a775f92eab720a2ab46b9fa0d4e8b" category="cell">CIFS server NetBIOS name</block>
+  <block id="df93949590558759d0b0f449537966d0" category="cell">在 AD 域中唯一的 CIFS 服务器名称。</block>
+  <block id="ff309cf3107765153856990e03224d8c" category="cell">组织单位</block>
+  <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">AD 域中要与 CIFS 服务器关联的组织单元。默认值为 cn = computers 。</block>
+  <block id="c11b541f2dc51346609bbd4f84450b6b" category="cell">DNS 域</block>
+  <block id="314c2b52f53238e133233b60949a6d36" category="cell">Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。</block>
+  <block id="225f0204cd2ca87530c681aeae9b7f3e" category="cell">NTP 服务器</block>
+  <block id="339d2db752bad623389940365590a650" category="inline-link">Cloud Manager 自动化文档</block>
+  <block id="e55b48803bc81da61ac823b49b9b4344" category="cell">选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="42b82f9ba6c1ea0d7f3f7e3fde7e922d" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="c806fc6088504aece33ec1078f7edf13" category="list-text">如果选择工作组设置，请输入为 CIFS 配置的工作组的服务器和工作组名称。</block>
+  <block id="77329b4991542c66635b8dd3f7a6f518" category="list-text">* 使用情况配置文件和分层 * ：</block>
+  <block id="0458d209a53113bf4e745280c9316fc5" category="list-text">默认情况下， * 存储效率 * 处于禁用状态。您可以更改此设置以启用重复数据删除和数据压缩。</block>
+  <block id="ecc7b94568d033b8afa5f95b89b20136" category="list-text">默认情况下， * 分层策略 * 设置为 * 仅 Snapshot * 。您可以根据需要选择其他分层策略。</block>
+  <block id="7721c2bc1a46653d2fe31df04b1f1d7b" category="inline-image-macro">用于创建 ONTAP 卷的 FSX 的使用情况配置文件和分层配置的屏幕截图。</block>
+  <block id="d92dc17a178426d4916acd66998be69b" category="paragraph"><block ref="d92dc17a178426d4916acd66998be69b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f3a303dc17c6a2c91073ff0eb515587f" category="list-text">* 审阅 * ：查看卷配置。单击 * 上一步 * 以更改设置，或单击 * 添加 * 以创建卷。</block>
+  <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">此时，新卷将添加到工作环境中。</block>
+  <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">挂载卷</block>
+  <block id="86a3efaabfd178d684bcd98f4cd6434c" category="paragraph">从 Cloud Manager 中访问挂载说明，以便将卷挂载到主机。</block>
+  <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">打开工作环境。</block>
+  <block id="7dae500c424af1807e52460f734b857e" category="list-text">打开卷菜单并选择 * 挂载卷 * 。</block>
+  <block id="958a7394acfcee5d86c01e758be4f1c2" category="inline-image-macro">打开卷菜单时可用操作的屏幕截图。</block>
+  <block id="54b1fe05786347782bfe7e4a3e5de355" category="paragraph"><block ref="54b1fe05786347782bfe7e4a3e5de355" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="38aa5b57f82843fe74bb954a343bf4e0" category="list-text">按照说明挂载卷。</block>
+  <block id="45cc32a4d53a1360b7ced005a212045b" category="summary">通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。</block>
+  <block id="fdd19953ce3013e133d600a251e48a61" category="doc">创建和管理适用于 ONTAP 的 Amazon FSX 工作环境</block>
+  <block id="11eed266884d218184bb4e52689ebf4d" category="paragraph">使用 Cloud Manager ，您可以创建和管理适用于 ONTAP 的 FSX 工作环境，以添加和管理卷和其他数据服务。</block>
+  <block id="54e54adb33e337b5c804d6820b674b9a" category="inline-link-macro">使用 Cloud Manager 发现它</block>
+  <block id="e5375c42110b0016231f311272774e83" category="paragraph">第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：</block>
+  <block id="110ca3ef191558286fc6a6b28dc94cb5" category="inline-link-macro">将 AWS 凭据添加到 Cloud Manager</block>
+  <block id="ecfc08dcf2bb62e3bae7466635378054" category="list-text">IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="122aefb3c8684a0e38fb50d87247ad18" category="list-text">要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。</block>
+  <block id="86e4fb4adcc1e79cfd5f41b2e24492a4" category="list-text">在 Cloud Manager 中，添加一个新的工作环境，选择位置 * Amazon Web Services* ，然后单击 * 下一步 * 。</block>
+  <block id="b270ee1d45588367ac774fa0f727fc7b" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 下一步 * 。</block>
+  <block id="f8b92939989132d828cfc3eea521a293" category="inline-image-macro">为适用于 ONTAP 的 Amazon FSX 添加工作环境的屏幕截图</block>
+  <block id="61a727936c57251e32cb54d629e03313" category="paragraph"><block ref="61a727936c57251e32cb54d629e03313" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8d84f3aa4d4c8f84d1addb4f10b99e6" category="list-text">在 Cloud Manager 中对适用于 ONTAP 的 FSX 进行身份验证。</block>
+  <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。</block>
+  <block id="bc7877d082a71bb780b2cfe54a2f56db" category="inline-image-macro">显示 AWS 角色下拉列表的屏幕截图</block>
+  <block id="88c29361a495a558e8e94ba0f1787827" category="paragraph"><block ref="88c29361a495a558e8e94ba0f1787827" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="430a5d13b9507e02103822accb0efa18" category="list-text">如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="49727167f9c15ab5bfa0422395e72a31" category="inline-image-macro">为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。</block>
+  <block id="32e8c427ff9ed76c4f8f6c5425c12c82" category="paragraph"><block ref="32e8c427ff9ed76c4f8f6c5425c12c82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d2a9afadbb6d43ee9c21ef6dc9d315f" category="list-text">提供有关适用于 ONTAP 的 FSX 实例的信息：</block>
+  <block id="620a619e5abf90904f8bd9148673563f" category="list-text">输入要使用的工作环境名称。</block>
+  <block id="d99cba7d7f71be21b06a8ed7b3cead82" category="list-text">您也可以单击加号并输入标记名称和值来创建标记。</block>
+  <block id="be5962a1bf7a843353b57734848a4297" category="list-text">输入并确认要使用的 ONTAP 集群密码。</block>
+  <block id="5e3355d70ab52073cbbd53548a916969" category="list-text">选择此选项可对 SVM 用户使用相同的密码或设置不同的密码。</block>
+  <block id="d0b2e405325c02e50ba6ff1e7a0bfdeb" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加凭据的屏幕截图</block>
+  <block id="0c59eb935a218de10968d2478d3839c5" category="paragraph"><block ref="0c59eb935a218de10968d2478d3839c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="282e8cadc54623677e7bc13447fcac29" category="list-text">提供区域和 VPC 信息：</block>
+  <block id="f71590c4106e9e8e85fb4072cc1b8408" category="list-text">选择一个区域和子网至少位于两个可用性区域中的 VPC ，以便每个节点都位于一个专用可用性区域中。</block>
+  <block id="d234e32cc579256f2dc2b1c0f46bf8ed" category="inline-link-macro">AWS 安全组</block>
+  <block id="c0a56d37b9a744bb980fb63714ff853a" category="inline-link-macro">AWS 弹性网络接口（ ENI ）</block>
+  <block id="70f807aec183b4123fd9e27691b549ae" category="list-text">接受默认安全组或选择其他安全组。 <block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>。</block>
+  <block id="8e21376ec8ebc45640c4648d1ea694e4" category="list-text">为每个节点选择可用性区域和子网。</block>
+  <block id="02b7327efc840726659c50bf482440ba" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图</block>
+  <block id="e856b8b85c22d45ac9df09b76538baf0" category="paragraph"><block ref="e856b8b85c22d45ac9df09b76538baf0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8acea1c4fcca87631ca127e2bc757f13" category="inline-link">AWS 传输网关</block>
+  <block id="98cd8d548fd2fa5186e8dc1c1123f9f6" category="list-text">保留 _CIDR Range_ 为空，然后单击 * 下一步 * 以自动设置可用范围。您也可以选择使用<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> 手动配置范围。</block>
+  <block id="7cc0a94cd1ccce02b23807753272d589" category="paragraph"><block ref="7cc0a94cd1ccce02b23807753272d589" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a034482e4ab702e672ecf4a4f7a47766" category="list-text">选择包含到浮动 IP 地址的路由的路由表。如果 VPC 中的子网只有一个路由表（主路由表），则 Cloud Manager 会自动将浮动 IP 地址添加到该路由表中。单击 * 下一步 * 继续。</block>
+  <block id="efae399de597884ba9e25be68c488178" category="inline-image-macro">为 ONTAP 的 FSX 选择路由表的屏幕截图</block>
+  <block id="9e3037d0c83106b66f9113f03ee4fb10" category="paragraph"><block ref="9e3037d0c83106b66f9113f03ee4fb10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link">设置 AWS KMS</block>
+  <block id="ba7f6c9c6d14f28bb8898cb79c05a77b" category="list-text">接受默认 AWS 主密钥或单击 * 更改密钥 * 以选择其他 AWS 客户主密钥（ CMK ）。有关 CMK 的详细信息，请参见<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>。单击 * 下一步 * 继续。</block>
+  <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置默认主密钥的屏幕截图</block>
+  <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">配置存储：</block>
+  <block id="552d35e7f28ee648c54813ab02c7dcb6" category="list-text">选择吞吐量，容量和单位。</block>
+  <block id="44c0eb6e7e1c5fab261de20248c94791" category="list-text">您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。</block>
+  <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。</block>
+  <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8088a4fa7d414a887d0eb3f19623bc06" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置存储配置的屏幕截图</block>
+  <block id="43135e6fbb293afbc21ffcb9200cd5ea" category="list-text">单击 * 下一步 * 。<block ref="acedc649b329bc2fa4856a424e9ac8f3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c9a1d71e742483b14e29f7c2e43e1c64" category="list-text">查看您的配置：</block>
+  <block id="0308fb9d7cca24bdc3f9928245f79119" category="list-text">单击选项卡以查看 ONTAP 属性，提供程序属性和网络配置。</block>
+  <block id="fded4515ce29ea3fdc954faa2784fe7f" category="list-text">单击 * 上一步 * 以更改任何设置。</block>
+  <block id="b5bd94a09b2ad1fd2dba6c4a902a9fd3" category="list-text">单击 * 添加 * 以接受设置并创建工作环境。</block>
+  <block id="ef80142d18e6c5a6d15e4724ab6810b8" category="inline-image-macro">查看适用于 ONTAP 的 FSX 设置的屏幕截图</block>
+  <block id="e8b9477d45071756ecb4a2cc5082344a" category="paragraph"><block ref="e8b9477d45071756ecb4a2cc5082344a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa726dbeb2fe46e53fc49ecac75ac6d7" category="paragraph">Cloud Manager 会在 " 画布 " 页面上显示适用于 ONTAP 的 FSX 配置。</block>
+  <block id="45d8e5da7753a5571797f6a81a9c4e3c" category="inline-image-macro">工作环境页面上的 Amazon FSX for ONTAP 屏幕截图。</block>
+  <block id="26682ff9a292960b61e97b937520b135" category="paragraph"><block ref="26682ff9a292960b61e97b937520b135" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11fa7924f258843d0c6a8377f70c698c" category="paragraph">现在，您可以使用 Cloud Manager 将卷添加到适用于 ONTAP 的 FSX 工作环境中。</block>
+  <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">发现适用于 ONTAP 的现有 FSX 文件系统</block>
+  <block id="5a31f364855ed7d093e5ff0c2d6a0a6f" category="paragraph">如果您使用 AWS 管理控制台创建了适用于 ONTAP 的 FSX 文件系统，或者您希望还原之前删除的工作环境，则可以使用 Cloud Manager 发现它。</block>
+  <block id="3eb13290c3d1e4b57acf05410a485779" category="list-text">在 Cloud Manager 中，单击 * 添加工作环境 * ，然后选择 * Amazon Web Services* 。</block>
+  <block id="6800849898be1086bb69e4658dd59629" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 单击此处 * 。</block>
+  <block id="e574e1da19f282b48ebb67c362fbc5cc" category="inline-image-macro">发现适用于 ONTAP 的 Amazon FSX 的工作环境的屏幕截图</block>
+  <block id="72e0dd6fd0d4009c79805d8504e7e490" category="paragraph"><block ref="72e0dd6fd0d4009c79805d8504e7e490" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="92362ba030c73cd6e20f4b4da71b26c3" category="list-text">选择现有凭据或创建新凭据。单击 * 下一步 * 。</block>
+  <block id="4dc9c1030aab459d22cbeca85a77bd17" category="list-text">选择要添加的 AWS 区域和工作环境。</block>
+  <block id="4d40b97424368fd2dcfa3beb51eac192" category="inline-image-macro">选择 AWS 区域和工作环境的屏幕截图</block>
+  <block id="daf8847714f7e326bcf10553bdbffa28" category="paragraph"><block ref="daf8847714f7e326bcf10553bdbffa28" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
+  <block id="3fca24f4054dbd7b229807ef3910d4b7" category="paragraph">Cloud Manager 将显示您发现的适用于 ONTAP 文件系统的 FSX 。</block>
+  <block id="b3fee7abcfd59e1f7a4b591d94eea26b" category="section-title">从工作空间中删除适用于 ONTAP 的 FSX</block>
+  <block id="619c35c80b530c32704e964530d66517" category="paragraph">您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。</block>
+  <block id="9ddaae0edb615f2995d27bd6e00976ce" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
+  <block id="960f6c85ef871302e3e408b649cf6e70" category="list-text">在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。</block>
+  <block id="410c78448ff59a132a6ef7e7c2bf2f4e" category="inline-image-macro">Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。</block>
+  <block id="47f6e6061b4eadfbf907049dcd591b28" category="paragraph"><block ref="47f6e6061b4eadfbf907049dcd591b28" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a3c7ec91e48d6cb0479b63af7c30a498" category="list-text">单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</block>
+  <block id="2167c28c0f5b01d9e01bb4084f44d791" category="section-title">删除适用于 ONTAP 的 FSX 工作环境</block>
+  <block id="4de2a58fbc41a8206c0c53a3dd1da960" category="paragraph">您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
+  <block id="b917a1d8451423450873eef39565dca3" category="inline-link-macro">删除所有卷</block>
+  <block id="7b41e03b81e97660913781a8239006df" category="list-text">您必须 <block ref="54cc4f96ff154d8637a706e7f5511434" category="inline-link-macro-rx"></block> 与文件系统关联。</block>
+  <block id="88b66180df4e558c94db0e4418e28d50" category="admonition">要删除卷，您需要在 AWS 中使用活动的 Connector 。</block>
+  <block id="ef91377d933625cd5679a41980e84a7d" category="list-text">您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。</block>
+  <block id="264e33787c94efb543f65228a9b52512" category="admonition">此操作将删除与工作环境关联的所有资源。此操作无法撤消。</block>
+  <block id="759e9950bbe6d95f5d993751a21090d8" category="list-text">打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</block>
+  <block id="5c026b5b99b1471c1695d12c5be5e3d9" category="list-text">在页面右上角，选择操作菜单，然后单击 * 删除 * 。</block>
+  <block id="eea2ce15389bae978a0efc5763b9cdac" category="inline-image-macro">通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。</block>
+  <block id="636c7339a775dda79a1b6b37974a27b3" category="paragraph"><block ref="636c7339a775dda79a1b6b37974a27b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7c1e5f31ebf2bb33eb06de268374f840" category="list-text">输入工作环境的名称，然后单击 * 删除 * 。</block>
+  <block id="00b56458820e0abf51f147bc4e399a7e" category="summary">您可以使用 Cloud Manager 管理卷，克隆和快照，并更改适用于 ONTAP 的 FSX 的分层策略。</block>
+  <block id="7e8d943ffd901385b9eef24cb61b44b9" category="doc">管理适用于 ONTAP 的 Amazon FSX 的卷</block>
+  <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">编辑卷</block>
+  <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">创建卷后，您可以随时对其进行修改。</block>
+  <block id="e3c15b55dc36cad58edc7cb73ae80e2c" category="list-text">打开卷菜单并选择 * 编辑 * 。</block>
+  <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">对于 NFS ，您可以修改大小和标记。</block>
+  <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">对于 CIFS ，您可以根据需要修改共享名称，用户，权限和 Snapshot 策略。</block>
+  <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">单击 * 应用 * 。</block>
+  <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">克隆卷</block>
+  <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">创建卷后，您可以从新 Snapshot 创建新的读写卷。</block>
+  <block id="343bf0d675ca357b025fb7472514438f" category="list-text">打开卷菜单并选择 * 克隆 * 。</block>
+  <block id="5e5db467595563d87880b20fec615319" category="list-text">输入克隆卷的名称。</block>
+  <block id="8215bd5d2f1e1b1cb3002f32795c762e" category="list-text">单击 * 克隆 * 。</block>
+  <block id="e479d2534f323a1275e2ed0809755e56" category="section-title">管理 Snapshot 副本</block>
+  <block id="13d23436eebf5663e94f902e862ce3bb" category="paragraph">Snapshot 副本可为卷提供时间点副本。创建 Snapshot 副本并将数据还原到新卷。</block>
+  <block id="c841bd422df65ac6f48f90c6d842cfc8" category="list-text">打开卷菜单，然后选择一个可用选项来管理 Snapshot 副本：</block>
+  <block id="77920e8d9473162a2167976898eaa180" category="list-text">* 创建 Snapshot 副本 *</block>
+  <block id="fa41e2569b3e81d19868356601d4d103" category="list-text">* 从 Snapshot 副本还原 *</block>
+  <block id="df95b2ddbeefe0bd257bae9d1c7d663a" category="list-text">按照提示完成选定操作。</block>
+  <block id="9f4aa892debf403a854859b0ca9c9ff6" category="section-title">更改分层策略</block>
+  <block id="3a2ff6a4c845ba47894d1dd10a1b908f" category="paragraph">更改卷的分层策略。</block>
+  <block id="d5f25d8802c3b7804d35fc3426a2f809" category="list-text">打开卷菜单并选择 * 更改分层策略 * 。</block>
+  <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">选择一个新的卷分层策略，然后单击 * 更改 * 。</block>
+  <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">复制和同步数据</block>
+  <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">在系统之间复制数据</block>
+  <block id="f337ff43d209c323b3938f63f85a1802" category="paragraph">您可以使用 Cloud Manager 在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="9a75c99f0497136ee916f228db55cacf" category="inline-link-rx"></block>。</block>
+  <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">创建同步关系</block>
+  <block id="755dfb4d90f88c5d06ef7f23988ca971" category="paragraph">您可以在 Cloud Manager 中使用 Cloud Sync 创建同步关系。要配置同步关系，请参见<block ref="f3020d1803625b27d288e870f5abc00a" category="inline-link-rx"></block>。</block>
+  <block id="f91674f3b22216fc484532cd24dda908" category="section-title">删除卷</block>
+  <block id="9497c556620605c0441cf034ff68a527" category="paragraph">删除不再需要的卷。</block>
+  <block id="08d16a95ed82f881bcc5359ecb0c8769" category="paragraph">您不能使用 Cloud Manager 删除先前属于 SnapMirror 关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。</block>
+  <block id="fa41d7948af66c69407c3a05211bb4b9" category="list-text">打开卷菜单并选择 * 删除 * 。</block>
+  <block id="a1757cd330af9ddfc6b1f315176b17e9" category="list-text">输入工作环境名称并确认要删除此卷。从 Cloud Manager 中完全删除卷可能需要长达一小时的时间。</block>
+  <block id="590368745da00a61c492e4b834d9568e" category="admonition">如果您尝试删除克隆的卷，则会收到错误。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
+  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="72999cd653b12474752fb77bab9691e3" category="inline-link-macro">Cloud Backup 注意事项</block>
+  <block id="75be9a02506771b87be972c89707f0d4" category="list-text"><block ref="75be9a02506771b87be972c89707f0d4" category="inline-link-macro-rx"></block></block>
+  <block id="bf6a36d1f8c7b0ef48e5a5b01357f720" category="inline-link-macro">云同步注意事项</block>
+  <block id="c9c82aba1257ee6c6ebbade2353f0b0d" category="list-text"><block ref="c9c82aba1257ee6c6ebbade2353f0b0d" category="inline-link-macro-rx"></block></block>
+  <block id="a5e8ac089fe7eb702f683ce020dc2a2a" category="inline-link-macro">有关 Cloud Tiering 的注意事项</block>
+  <block id="3754b5e44654d3dc7bfaa36f213a8795" category="list-text"><block ref="3754b5e44654d3dc7bfaa36f213a8795" category="inline-link-macro-rx"></block></block>
+  <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">云数据感知注意事项</block>
+  <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
+  <block id="e55bdaae79868c01c7cc36c1283eb425" category="summary">Cloud Manager 会创建 AWS 安全组，其中包含 Cloud Manager 和适用于 ONTAP 的 FSX 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。</block>
+  <block id="e87d6ed459b274ad7c388e0797013c9f" category="doc">适用于 ONTAP 的 FSX 的安全组规则</block>
+  <block id="9f415057e43c73d4e37a0068a0ca9486" category="section-title">适用于 ONTAP 的 FSX 的规则</block>
+  <block id="8506857e27e6280388aa5873bf48c993" category="paragraph">适用于 ONTAP 的 FSX 安全组需要入站和出站规则。</block>
+  <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">入站规则</block>
+  <block id="4a0ed8041426b30c39ae888d3e61bd7e" category="paragraph">预定义安全组中入站规则的源代码为 0.0.0.0/0 。</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">所有 ICMP</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">全部</block>
+  <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">Ping 实例</block>
+  <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
+  <block id="ababfee3bb5ff05f9b0368cea51ee877" category="cell">使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问</block>
+  <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443.</block>
+  <block id="292d4f8112774cc3427c6a7da0cce58b" category="cell">使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22.</block>
+  <block id="68e68bb8029eb3e7ed079fea7b679d99" category="cell">SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111.</block>
+  <block id="42309a274997c44da61b489d9df7edc8" category="cell">远程过程调用 NFS</block>
+  <block id="e00da03b685a0dd18fb6a08af0923de0" category="cell">139.</block>
+  <block id="f578101933ae5aa506411a00b33b06ec" category="cell">用于 CIFS 的 NetBIOS 服务会话</block>
+  <block id="ff86b94aeb68e2de5387c9dbf865b3b9" category="cell">161-162.</block>
+  <block id="e0215167b05004bf68d7d23d0a15605c" category="cell">简单网络管理协议</block>
+  <block id="67f7fb873eaf29526a11a9b7ac33bfac" category="cell">445</block>
+  <block id="100c97ce556d60c86e5d8b424c3ed3ad" category="cell">Microsoft SMB/CIFS over TCP （通过 TCP ）和 NetBIOS 成帧</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="718b3fb251c2987c99ce9d2d23eb38b6" category="cell">NFS 挂载</block>
+  <block id="b056eb1587586b71e2da9acfe4fbd19e" category="cell">749</block>
+  <block id="87b3695bfd6f672e2c7c4da7ca2b46a8" category="cell">Kerberos</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049.</block>
+  <block id="02c69a3a7485c8d2f899c2eb58f8be50" category="cell">NFS 服务器守护进程</block>
+  <block id="d54ce9de9df77c579775a7b6b1a4bdc0" category="cell">3260</block>
+  <block id="decc72453fd5881c6144ead65577abe0" category="cell">通过 iSCSI 数据 LIF 进行 iSCSI 访问</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="3efa34cc491e9e34264231984db1c224" category="cell">NFS 锁定守护进程</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="6e1768e34172523fffe5e878d95f0f1a" category="cell">NFS 的网络状态监视器</block>
+  <block id="b7a782741f667201b54880c925faec4b" category="cell">10000</block>
+  <block id="9f6c516b5f5492bbbe0bfa8167ac3c38" category="cell">使用 NDMP 备份</block>
+  <block id="bf03faf089665754a8af5dce381a42ca" category="cell">11104.</block>
+  <block id="0f98f191f6139c531c1435214b55de48" category="cell">管理 SnapMirror 的集群间通信会话</block>
+  <block id="f0f07e680de407b0f12abf15bd520097" category="cell">11105.</block>
+  <block id="d03bcbb93f8e29ffb08772b43b55d234" category="cell">使用集群间 LIF 进行 SnapMirror 数据传输</block>
+  <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
+  <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049.</block>
+  <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">NFS Rquotad 协议</block>
+  <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">出站规则</block>
+  <block id="86c7c9c5b63a1a193b47895ff9b75eee" category="paragraph">FSX for ONTAP 的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
+  <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本外向规则</block>
+  <block id="901e926561772e4303bdb71ec6f8f7b5" category="paragraph">FSX for ONTAP 的预定义安全组包括以下出站规则。</block>
+  <block id="a3c775b853cb7264d143451380d3e164" category="cell">所有出站流量</block>
+  <block id="170100eb6e4338b75a2fc06f87f9e5a4" category="cell">所有 TCP</block>
+  <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">所有 UDP</block>
+  <block id="e2f58f5baabc821fa8bdc13a96184016" category="section-title">高级出站规则</block>
+  <block id="a006e2d570ede726381201e11de10d68" category="paragraph">如果您需要对出站流量使用严格的规则，则可以使用以下信息仅打开 ONTAP 的 FSX 出站通信所需的端口。</block>
+  <block id="d0fb2d0bd8bf6909549b5e1a987f783c" category="admonition">源是 ONTAP 系统上的 FSX 接口（ IP 地址）。</block>
+  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服务</block>
+  <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">源</block>
+  <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
+  <block id="4fbbbcdfcdfad5270a20167c67509f0b" category="cell">Active Directory</block>
+  <block id="2a38a4a9316c49e5a833517c45d31070" category="cell">88</block>
+  <block id="e2578ec54f85b5b6333c94364b756a1c" category="cell">节点管理 LIF</block>
+  <block id="b81acdd12d819432acb7f548eb3359be" category="cell">Active Directory 目录林</block>
+  <block id="fa0b1696f093aa6d80fa11d7607fcf3d" category="cell">Kerberos V 身份验证</block>
+  <block id="3988c7f88ebcb58c6ce932b957b6f332" category="cell">137.</block>
+  <block id="a5284329103adcae2bd4f84ad4e5c162" category="cell">NetBIOS 名称服务</block>
+  <block id="013d407166ec4fa56eb1e1f8cbe183b9" category="cell">138.</block>
+  <block id="f50f261c93b1d23352fa830e183dc6ad" category="cell">NetBIOS 数据报服务</block>
+  <block id="2aa976707cd5d2da05a9dae859536870" category="cell">NetBIOS 服务会话</block>
+  <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP 和 UDP</block>
+  <block id="c86a7ee3d8ef0b551ed58e354a836f2b" category="cell">389.</block>
+  <block id="2363dee608bcd9f6ce7f980bfdad5789" category="cell">LDAP</block>
+  <block id="f1b6f2857fb6d44dd73c7041e0aa0f19" category="cell">464.</block>
+  <block id="18eb444b6b771bcc91c4997659263d7d" category="cell">Kerberos V 更改和设置密码（ set_change ）</block>
+  <block id="7f54d18f39188eef294de01d335410b6" category="cell">Kerberos 密钥管理</block>
+  <block id="fcf186ee373ced14cf707bef511852d3" category="cell">Kerberos V 更改和设置密码（ RPCSEC_GSS ）</block>
+  <block id="6d9f458ee15a53b8195aff0ff180a97c" category="cell">数据 LIF （ NFS ， CIFS ， iSCSI ）</block>
+  <block id="eebce435de7129d8316b4c6a0e9f9fcc" category="cell">数据 LIF （ NFS 、 CIFS ）</block>
+  <block id="b6e33b393b9cea9f4b5807f4d2cdf335" category="cell">Kerberos V 更改和设置密码（ RPCSEC_GSS ）</block>
+  <block id="a58f484608b0d692f1839295a398638d" category="cell">备份到 S3</block>
+  <block id="999028872cfff7ae8ee330a33cbd3874" category="cell">5010</block>
+  <block id="54f7d853bcd07992f133218c21a038be" category="cell">集群间 LIF</block>
+  <block id="55de3994e99aa970c849c53bc4429da9" category="cell">备份端点或还原端点</block>
+  <block id="4c62d4e66380262ec50ccc7b5d1acc02" category="cell">备份到 S3 功能的备份和还原操作</block>
+  <block id="249694a485fc5d3289c38986b4f8e887" category="cell">集群</block>
+  <block id="c24475390eff056757a0e12aa5fe5e9f" category="cell">所有流量</block>
+  <block id="65ec67271f1ca7c8d6b82e17125410b7" category="cell">一个节点上的所有 LIF</block>
+  <block id="c0900faa4af93e0723408cba2ec46323" category="cell">其它节点上的所有 LIF</block>
+  <block id="f484b5d85f303e1a759f409a83b3a0e8" category="cell">集群间通信（仅限 Cloud Volumes ONTAP HA ）</block>
+  <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
+  <block id="7b949d0cea1dcd058fa15d15e56dcb55" category="cell">HA 调解器</block>
+  <block id="a027048d5e4131f9799063f22513c813" category="cell">ZAPI 调用（仅适用于 Cloud Volumes ONTAP HA ）</block>
+  <block id="7d6fe0dd606232f7155fdeae2ea620a9" category="cell">ICMP</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
+  <block id="4cfc36b50d04aaf1a0c91d6e93be6dca" category="cell">保持活动状态（仅限 Cloud Volumes ONTAP HA ）</block>
+  <block id="54201c55d2bdc7a9e19d9e032d8c0ede" category="cell">DHCP</block>
+  <block id="a3f390d88e4c41f2747bfa2f1b5f87db" category="cell">68</block>
+  <block id="74d297edd733ae756164d870a3d2f03f" category="cell">首次设置 DHCP 客户端</block>
+  <block id="0feb3d8c92089db9cb12a059ed24887e" category="cell">DHCP</block>
+  <block id="735b90b4568125ed6c3f678819b6e058" category="cell">67</block>
+  <block id="88affaeab6cd17bcddbccca01098cf9b" category="cell">DHCP 服务器</block>
+  <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="cell">DNS</block>
+  <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53.</block>
+  <block id="b0ddb9a92b68188222c131b7e0574f48" category="cell">节点管理 LIF 和数据 LIF （ NFS 、 CIFS ）</block>
+  <block id="aae155889087fca42368d9fab8b54ee6" category="cell">NDMP</block>
+  <block id="81da9c1cda736bbbff7737e1ccec2d84" category="cell">18600 – 18699</block>
+  <block id="ed50214bfedbe04d48e6bd8cc239ce46" category="cell">目标服务器</block>
+  <block id="4414d24afb3e6422813f5bc1dfcc2a8f" category="cell">NDMP 副本</block>
+  <block id="c2239a92bde29f0a9f9173193cc2fe00" category="cell">SMTP</block>
+  <block id="8e296a067a37563370ded05f5a3bf3ec" category="cell">25.</block>
+  <block id="ef860b6ef144db3d9fdffc1170a30575" category="cell">邮件服务器</block>
+  <block id="89f77914d604e82953b4d93ead2ac4d4" category="cell">SMTP 警报、可用于 AutoSupport</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="cell">SNMP</block>
+  <block id="bd4c9ab730f5513206b999ec0d90d1fb" category="cell">161.</block>
+  <block id="179d1420741d9e1a433e0f60c9f18ff1" category="cell">监控服务器</block>
+  <block id="a59e525e47c5c408e5fe28ddc631c55c" category="cell">通过 SNMP 陷阱进行监控</block>
+  <block id="82aa4b0af34c2313a562076992e50aa3" category="cell">162.</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="cell">SnapMirror</block>
+  <block id="928bd5c4260637c2acb46ce8c05c8237" category="cell">ONTAP 集群间 LIF</block>
+  <block id="ba9466624e66e8efa9852c49cc227e4d" category="cell">SnapMirror 数据传输</block>
+  <block id="6da6e44dc9987246944fdf9de3d4e794" category="cell">系统日志</block>
+  <block id="59b90e1005a220e2ebc542eb9d950b1e" category="cell">514.</block>
+  <block id="74082482ea0cad59170e3d4dce025b4e" category="cell">系统日志服务器</block>
+  <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">系统日志转发消息</block>
+  <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Connector 的规则</block>
+  <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector 的安全组需要入站和出站规则。</block>
+  <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">提供对 Connector 主机的 SSH 访问</block>
+  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问以及从 Cloud Data sense 建立的连接</block>
+  <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问</block>
+  <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
+  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">如果您的 AWS 网络不使用 NAT 或代理，则可为云数据感知实例提供 Internet 访问</block>
+  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
+  <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector 的预定义安全组包括以下出站规则。</block>
+  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">如果您需要对出站流量设置严格的规则，则可以使用以下信息仅打开 Connector 进行出站通信所需的端口。</block>
+  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">源 IP 地址是 Connector 主机。</block>
+  <block id="03b9930526cd7e3fa4aafa64244d7957" category="cell">Active Directory Kerberos V 更改和设置密码（ RPCSEC_GSS ）</block>
+  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 调用和 AutoSupport</block>
+  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">出站 Internet 和 ONTAP 集群管理 LIF</block>
+  <block id="756da060e5d58870fc2d28d4b7bc9a45" category="cell">API 调用 AWS 和 ONTAP 、并将 AutoSupport 消息发送到 NetApp</block>
+  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 调用</block>
+  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA 调解器</block>
+  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">与 ONTAP HA 调解器通信</block>
+  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
+  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">对备份到 S3 进行 API 调用</block>
+  <block id="dd8679112f038315d04028c46da1fef7" category="cell">用于云管理器进行 DNS 解析</block>
+  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">云数据感知</block>
+  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">云数据感知实例</block>
+  <block id="059ace13ef3980df592dafb754ef8883" category="cell">适用于 Cloud Volumes ONTAP 的云数据感知</block>
+  <block id="f6ebedc10f620647623a6be7cd7cb8a5" category="summary">要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要为具有 FSX for ONTAP 权限的 IAM 用户角色提供 AWS 访问密钥和机密密钥。</block>
+  <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">为适用于 ONTAP 的 FSX 设置权限</block>
+  <block id="b84143bbdad7df35ec2c66cf2071f420" category="paragraph">要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要通过提供 IAM 角色的 ARN 将 AWS 凭据添加到 Cloud Manager ，以便为 Cloud Manager 提供创建适用于 ONTAP 的 FSX 工作环境所需的权限。</block>
+  <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">设置 IAM 角色</block>
+  <block id="d9a499196547b3d025fe2a7d3c56baa1" category="paragraph">设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色。</block>
+  <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">转到目标帐户中的 IAM 控制台。</block>
+  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
+  <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">请务必执行以下操作：</block>
+  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</block>
+  <block id="7d85138efc851d16b36fe016a7d406df" category="list-text">选择 * 其他 AWS 帐户 * 并输入 Cloud Manager SaaS 的 ID ： 952013314444</block>
+  <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">创建包含以下权限的策略：</block>
+  <block id="e08f06cebc90d5cc269f643f2df5ab95" category="list-text">复制 IAM 角色的角色 ARN ，以便您可以在下一步将其粘贴到 Cloud Manager 中。</block>
+  <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">IAM 角色现在具有所需的权限。</block>
+  <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">添加凭据</block>
+  <block id="497de2fdf34143e76f1d2110f9556188" category="paragraph">为 IAM 角色提供所需权限后，将角色 ARN 添加到 Cloud Manager 中。</block>
+  <block id="5138a631dd35ae5628a6137742d99bcc" category="paragraph">如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟，然后再将凭据添加到 Cloud Manager 。</block>
+  <block id="660dd8cc813d5a986fc14efa52264b91" category="list-text">在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。</block>
+  <block id="4305773753b9ba702b13934db50507c2" category="inline-image-macro">一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。</block>
+  <block id="e595ee8d0b73c843696b78f80de0bad2" category="paragraph"><block ref="e595ee8d0b73c843696b78f80de0bad2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。</block>
+  <block id="15d1c1365d4f855b7d77c93232a59906" category="list-text">* 凭据位置 * ：选择 * Amazon Web Services &gt; Cloud Manager* 。</block>
+  <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">* 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。</block>
+  <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">* 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。</block>
+  <block id="c0abab76d53e87b10c7a7de184fc0f53" category="paragraph">现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相关链接</block>
+  <block id="97911b3c54a4e826b34c1f79026316c5" category="inline-link">AWS 凭据和权限</block>
+  <block id="8338e29a734b66a3349e1aa3c284aaa2" category="list-text"><block ref="8338e29a734b66a3349e1aa3c284aaa2" category="inline-link-rx"></block></block>
+  <block id="6bccb09f2c81a00c03cd35c87a54b03f" category="inline-link">管理 Cloud Manager 的 AWS 凭据</block>
+  <block id="649c686446ef2e48153e42e8ebf75513" category="list-text"><block ref="649c686446ef2e48153e42e8ebf75513" category="inline-link-rx"></block></block>
+  <block id="603ec1431df96260c06b8b0fc539dca4" category="summary">Amazon FSX for ONTAP 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户目前在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的精简性，灵活性，安全性和可扩展性。</block>
+  <block id="2373ee05a5847e8f92338b8835c8a17b" category="paragraph"><block ref="96821e1e659978c978732a5dc24298ac" category="inline-link-macro-rx"></block> 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
+  <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">无需配置或管理存储设备，软件或备份。</block>
+  <block id="620d7e4da65c27b65a66bca15517b802" category="list-text">支持 CIFS ， NFSv3 ， NFSv4.x 和 SMB v2.0 - v3.1.1 协议。</block>
+  <block id="f6ad83cb7f527e383e392f709849a098" category="list-text">使用可用的不常访问（ IA ）存储层，可实现低成本，几乎无限制的数据存储容量。</block>
+  <block id="3c36508c8697f7ec7a94803545518d69" category="list-text">经过认证，可在延迟敏感型应用程序上运行，包括 Oracle RAC 。</block>
+  <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">可选择捆绑定价和按需购买定价</block>
+  <block id="4b892d08b42aafcd301b83ab05b6e993" category="section-title">Cloud Manager 中的其他功能</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
+  <block id="d9bf9116e04a89e455600416ad7872f3" category="list-text">利用人工智能（ AI ）驱动的技术，云数据感知可以帮助您了解数据环境，并识别 FSX for ONTAP 帐户中的敏感数据。<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>。</block>
+  <block id="1f944a9ec2785c18a692aeedf9839548" category="list-text">使用 NetApp Cloud Sync ，您可以自动将数据迁移到云中或内部环境中的任何目标。<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="8bffb197ac66e59166722f267ae2aa89" category="inline-link">《适用于 ONTAP 的 Amazon FSX 入门指南》</block>
+  <block id="b63f9ea0c064f36284d9518a04bb2394" category="paragraph">您的 FSX for ONTAP 帐户由 AWS 维护，而不是由 Cloud Manager 维护。<block ref="8ceb48ebb1fa83d69a24f299e3fde40a" category="inline-link-rx"></block></block>
+  <block id="bcde5e61b57c391c5832e7ea9a5bf2b1" category="paragraph">在 AWS 中使用连接器以及 Cloud Sync 和 Data sense 等可选数据服务会产生额外成本。</block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支持的区域</block>
+  <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">查看支持的 Amazon 地区。</block>
+  <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">获取帮助</block>
+  <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系统，基础架构或使用此服务的任何 AWS 解决方案相关的问题或技术支持问题，请使用 AWS 控制台中的支持中心向 AWS 创建支持案例。选择 "FSX for ONTAP " 服务和相应的类别。提供创建 AWS 支持案例所需的其余信息。</block>
+  <block id="1db5f4a1a813c32af28e132cf45cac0f" category="paragraph">对于 Cloud Manager 或 Cloud Manager 微服务特有的一般问题，您可以从在线 Cloud Manager 聊天开始。</block>
+  <block id="409924e4cb5560dcfd0701e1ac237826" category="paragraph">对于 Cloud Manager 或中的微服务特有的技术支持问题，您可以使用 Cloud Manager 帐户级别序列号打开 NetApp 支持服务单。您需要注册 Cloud Manager 序列号才能激活支持。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="0fad775ed670ca6bde434fb3d471a64d" category="list-text">Cloud Manager 只能将数据从内部或 Cloud Volumes ONTAP 复制到适用于 ONTAP 的 FSX 。</block>
+  <block id="067fe115499332ebd701781ed653d1f8" category="list-text">此时，可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷。</block>
+  <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。</block>
+  <block id="bf7ec532103402eaed4653738655f6ad" category="doc">开始使用适用于 ONTAP 的 Amazon FSX</block>
+  <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。</block>
+  <block id="2db8ac87c99d0b6932322889e2e22b9e" category="inline-link-macro">设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色</block>
+  <block id="43ff28b4c7690071a9a464f1a45a0fdb" category="paragraph">在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 <block ref="a7824a05bb8c139e3298b282499ce62d" category="inline-link-macro-rx"></block>。</block>
+  <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
+  <block id="dc54255a75613f079e6fe6e679736fe9" category="paragraph">您必须具有<block ref="00f46849b460b453cd7193e5c9634911" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用 Connector ， Cloud Manager 将提示您是否尚未添加。</block>
+  <block id="173cc3f2694be1fa38808fdd8021304c" category="paragraph">您可以使用 Cloud Manager 为 ONTAP 卷创建 FSX 。</block>
+  <block id="711497cf466e121cf263849d7f648140" category="paragraph">使用 Cloud Manager 管理卷并配置其他服务，例如复制， Cloud Sync 和 Data sense 。</block>
+  <block id="4d36bd7ea566aabab173cf25b707699a" category="inline-link">使用 Cloud Manager 创建连接器</block>
+  <block id="0d07b06047060aa469c2c6bab8b71067" category="list-text"><block ref="0d07b06047060aa469c2c6bab8b71067" category="inline-link-rx"></block></block>
+  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
+  <block id="beb177ff820d3d8e2be6739354257cc5" category="list-text"><block ref="beb177ff820d3d8e2be6739354257cc5" category="inline-link-rx"></block></block>
+  <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
+  <block id="01bad35237928471ef7e7388b89cebcf" category="list-text"><block ref="01bad35237928471ef7e7388b89cebcf" category="inline-link-rx"></block></block>
+  <block id="80ff3e3b4817bcd801ad60d27676fed7" category="summary">适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用 NetApp Cloud Manager 管理适用于 ONTAP 的 FSX 。</block>
+  <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Amazon FSX for ONTAP 文档</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
+  <block id="69f7f21f4fc680b59f6e889bf9547523" category="sidebar">Amazon FSX for ONTAP 文档</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
+  <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">了解适用于 ONTAP 的 FSX</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">要求</block>
+  <block id="767c313289c6f36a3348709b853c6020" category="sidebar">使用适用于 ONTAP 的 Amazon FSx</block>
+  <block id="b717787f66ea65a295fc51e1e85baeb1" category="sidebar">创建和管理工作环境</block>
+  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">创建并挂载卷</block>
+  <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">管理卷和数据服务</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
+  <block id="6b5b1212807dea3d5cd6a3fb67f2d1d6" category="sidebar">创建和管理工作环境</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+</blocks>
