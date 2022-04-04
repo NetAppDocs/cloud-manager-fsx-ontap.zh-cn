@@ -25,7 +25,7 @@ summary: 设置工作环境后，您可以创建和管理适用于 ONTAP 卷，�
 
 您需要：
 
-* 活动 https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html["AWS 中的连接器"^]。
+* 活动 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
 * 如果要使用 SMB 、必须设置 DNS 和 Active Directory 。有关 DNS 和 Active Directory 网络配置的详细信息，请参见 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS ：使用自管理 Microsoft AD 的前提条件"^]。
 
 

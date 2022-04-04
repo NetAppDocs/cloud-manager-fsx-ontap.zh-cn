@@ -47,7 +47,6 @@
   <block id="3c5b27df21b3db8fbf99260b6111c620" category="paragraph">您可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷，并在适用于 ONTAP 的 FSX 工作环境中使用 Cloud Manager 管理这些卷。</block>
   <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">您需要：</block>
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS 中的连接器</block>
-  <block id="9715c6c76185fc55127d177e360e9385" category="list-text">活动<block ref="619cc03f7b60a7ffb6c9bc0f703dc5ac" category="inline-link-rx"></block>。</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：使用自管理 Microsoft AD 的前提条件</block>
   <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">如果要使用 SMB 、必须设置 DNS 和 Active Directory 。有关 DNS 和 Active Directory 网络配置的详细信息，请参见 <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
@@ -433,9 +432,7 @@
   <block id="c0abab76d53e87b10c7a7de184fc0f53" category="paragraph">现在，您可以在创建适用于 ONTAP 的 FSX 工作环境时使用这些凭据。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">相关链接</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="inline-link">AWS 凭据和权限</block>
-  <block id="8338e29a734b66a3349e1aa3c284aaa2" category="list-text"><block ref="8338e29a734b66a3349e1aa3c284aaa2" category="inline-link-rx"></block></block>
   <block id="6bccb09f2c81a00c03cd35c87a54b03f" category="inline-link">管理 Cloud Manager 的 AWS 凭据</block>
-  <block id="649c686446ef2e48153e42e8ebf75513" category="list-text"><block ref="649c686446ef2e48153e42e8ebf75513" category="inline-link-rx"></block></block>
   <block id="603ec1431df96260c06b8b0fc539dca4" category="summary">Amazon FSX for ONTAP 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户目前在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的精简性，灵活性，安全性和可扩展性。</block>
   <block id="2373ee05a5847e8f92338b8835c8a17b" category="paragraph"><block ref="96821e1e659978c978732a5dc24298ac" category="inline-link-macro-rx"></block> 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
@@ -468,15 +465,11 @@
   <block id="2db8ac87c99d0b6932322889e2e22b9e" category="inline-link-macro">设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色</block>
   <block id="43ff28b4c7690071a9a464f1a45a0fdb" category="paragraph">在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 <block ref="a7824a05bb8c139e3298b282499ce62d" category="inline-link-macro-rx"></block>。</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
-  <block id="dc54255a75613f079e6fe6e679736fe9" category="paragraph">您必须具有<block ref="00f46849b460b453cd7193e5c9634911" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用 Connector ， Cloud Manager 将提示您是否尚未添加。</block>
   <block id="173cc3f2694be1fa38808fdd8021304c" category="paragraph">您可以使用 Cloud Manager 为 ONTAP 卷创建 FSX 。</block>
   <block id="711497cf466e121cf263849d7f648140" category="paragraph">使用 Cloud Manager 管理卷并配置其他服务，例如复制， Cloud Sync 和 Data sense 。</block>
   <block id="4d36bd7ea566aabab173cf25b707699a" category="inline-link">使用 Cloud Manager 创建连接器</block>
-  <block id="0d07b06047060aa469c2c6bab8b71067" category="list-text"><block ref="0d07b06047060aa469c2c6bab8b71067" category="inline-link-rx"></block></block>
   <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
-  <block id="beb177ff820d3d8e2be6739354257cc5" category="list-text"><block ref="beb177ff820d3d8e2be6739354257cc5" category="inline-link-rx"></block></block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
-  <block id="01bad35237928471ef7e7388b89cebcf" category="list-text"><block ref="01bad35237928471ef7e7388b89cebcf" category="inline-link-rx"></block></block>
   <block id="80ff3e3b4817bcd801ad60d27676fed7" category="summary">适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用 NetApp Cloud Manager 管理适用于 ONTAP 的 FSX 。</block>
   <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Amazon FSX for ONTAP 文档</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
@@ -497,4 +490,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">活动<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
+  <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
+  <block id="0f9f43c114be6c5746b95fa092ad10b2" category="list-text"><block ref="0f9f43c114be6c5746b95fa092ad10b2" category="inline-link-rx"></block></block>
+  <block id="885bf112deac8aef76c696fd4369622f" category="paragraph">您必须具有<block ref="ee4793145cbadfb90a826d44d7b7a098" category="inline-link-rx"></block> 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用 Connector ， Cloud Manager 将提示您是否尚未添加。</block>
+  <block id="300de2fff5e8bf53f93ce557eb141f27" category="list-text"><block ref="300de2fff5e8bf53f93ce557eb141f27" category="inline-link-rx"></block></block>
+  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
+  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
 </blocks>

@@ -88,6 +88,6 @@ image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager �
 
 == 相关链接
 
-* https://docs.netapp.com/us-en/cloud-manager-get-started/concept-accounts-aws.html["AWS 凭据和权限"^]
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-adding-aws-accounts.html["管理 Cloud Manager 的 AWS 凭据"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html["AWS 凭据和权限"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["管理 Cloud Manager 的 AWS 凭据"^]
 
