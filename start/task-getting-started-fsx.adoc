@@ -18,7 +18,7 @@ summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
 只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。
 
 [role="quick-margin-para"]
-在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 link:requirements/task_setting_up_permissions_fsx.html["设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色"]。
+在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 link:../requirements/task-setting-up-permissions-fsx.html["设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色"]。
 
 [role="quick-margin-para"]
 您必须具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["适用于 AWS 的连接器"^] 要打开适用于 ONTAP 的 FSX 工作环境，请创建卷或执行其他操作。如果需要使用 Connector ， Cloud Manager 将提示您是否尚未添加。

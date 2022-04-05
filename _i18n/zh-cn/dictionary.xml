@@ -13,32 +13,25 @@
   <block id="3152521594c71809f9c72383294b05b7" category="section-title">承担 IAM 角色</block>
   <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">在创建适用于 ONTAP 的 FSX 工作环境时，您现在必须提供一个 IAM 角色的 ARN ， Cloud Manager 可以使用此 ARN 来创建适用于 ONTAP 的 FSX 工作环境。您以前需要提供 AWS 访问密钥。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">了解如何为适用于 ONTAP 的 FSX 设置权限</block>
-  <block id="13e5c10c795e686e29eadb40176673c7" category="paragraph"><block ref="cf631a156cd347f4c5596cb7048bba9e" category="inline-link-macro-rx"></block>。</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">使用 Cloud Manager API 创建 iSCSI 卷</block>
   <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">您可以使用 Cloud Manager API 为适用于 ONTAP 的 FSX 创建 iSCSI 卷，并在您的工作环境中对其进行管理。</block>
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">创建卷时选择卷单元</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">创建卷时，请选择卷单位（ GiB 或 TiB ）</block>
-  <block id="da22f48d59f2fa57df49bc6c518d4ea3" category="paragraph">您可以 <block ref="efd00606ea840f5daa498a5838165877" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
   <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
   <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">使用 Cloud Manager 创建 CIFS 卷</block>
   <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">使用 Cloud Manager 在适用于 ONTAP 的 FSX 中创建 CIFS 卷</block>
-  <block id="dd2965fdd58c782fcb7aa8377a7b2d12" category="paragraph">现在可以了 <block ref="a32b1ce0bbebafb6ae37c1c71466c875" category="inline-link-macro-rx"></block>。</block>
   <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">使用 Cloud Manager 编辑卷</block>
   <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">使用 Cloud Manager 编辑 ONTAP 卷的 FSX</block>
-  <block id="bcdfd7c9df2a00f5b0ec2f5821dbf7b0" category="paragraph">现在可以了 <block ref="899a64d6d124f6c482bcc934f2596bd7" category="inline-link-macro-rx"></block>。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">支持适用于 ONTAP 的 Amazon FSX</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
   <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> 是一项完全托管的服务，允许客户启动和运行由 NetApp ONTAP 存储操作系统提供支持的文件系统。FSX for ONTAP 提供了与 NetApp 客户在内部使用的相同的特性，性能和管理功能，并具有原生 AWS 服务的简单性，灵活性，安全性和可扩展性。</block>
   <block id="43ece0944414298a29b4d72bc56373f1" category="inline-link-macro">了解适用于 ONTAP 的 Amazon FSX</block>
-  <block id="3ad7a391899f410f6c691f04c5fc29dc" category="paragraph"><block ref="28ccfcf4ae259f2c2c90423cda2e679d" category="inline-link-macro-rx"></block>。</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">您可以在 Cloud Manager 中配置适用于 ONTAP 的 FSX 工作环境。</block>
   <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="inline-link-macro">创建适用于 ONTAP 的 Amazon FSX 工作环境</block>
-  <block id="9f5231696fe1247c1c174f8df3236567" category="paragraph"><block ref="4296fbdd4f0f53e33c6e1d55bda55b15" category="inline-link-macro-rx"></block>。</block>
   <block id="7965f44d9657c905774d8d427141b845" category="list-text">使用 AWS 和 Cloud Manager 中的连接器，您可以创建和管理卷，复制数据，并将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。</block>
   <block id="eddf71c2364cb70dc54a32723a344817" category="inline-link-macro">开始使用适用于 Amazon FSX for ONTAP 的 Cloud Data sense</block>
-  <block id="deb4ff1d98dec32cf90245eadfe9d5fb" category="paragraph"><block ref="f040423cd4b5eeaa8e9ebfeeb9fc3ca2" category="inline-link-macro-rx"></block>。</block>
   <block id="f72448d4491d54800c0487b0482fd149" category="summary">设置工作环境后，您可以创建和管理适用于 ONTAP 卷，克隆和快照的 Amazon FSx ，更改分层策略以及删除适用于 ONTAP 的 FSx 。</block>
   <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">为适用于 ONTAP 的 Amazon FSX 创建卷</block>
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">设置工作环境后，您可以为 ONTAP 卷创建和挂载 FSX 。</block>
@@ -119,7 +112,6 @@
   <block id="e5375c42110b0016231f311272774e83" category="paragraph">第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
   <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：</block>
   <block id="110ca3ef191558286fc6a6b28dc94cb5" category="inline-link-macro">将 AWS 凭据添加到 Cloud Manager</block>
-  <block id="ecfc08dcf2bb62e3bae7466635378054" category="list-text">IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="122aefb3c8684a0e38fb50d87247ad18" category="list-text">要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。</block>
   <block id="86e4fb4adcc1e79cfd5f41b2e24492a4" category="list-text">在 Cloud Manager 中，添加一个新的工作环境，选择位置 * Amazon Web Services* ，然后单击 * 下一步 * 。</block>
   <block id="b270ee1d45588367ac774fa0f727fc7b" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 下一步 * 。</block>
@@ -129,7 +121,6 @@
   <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">如果您的帐户中存在一个对适用于 ONTAP 的 FSX 具有正确 AWS 权限的 IAM 角色，请从下拉列表中选择该角色。</block>
   <block id="bc7877d082a71bb780b2cfe54a2f56db" category="inline-image-macro">显示 AWS 角色下拉列表的屏幕截图</block>
   <block id="88c29361a495a558e8e94ba0f1787827" category="paragraph"><block ref="88c29361a495a558e8e94ba0f1787827" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="430a5d13b9507e02103822accb0efa18" category="list-text">如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 <block ref="deefb8e7d14a7b8dbc248ff023724010" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="49727167f9c15ab5bfa0422395e72a31" category="inline-image-macro">为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。</block>
   <block id="32e8c427ff9ed76c4f8f6c5425c12c82" category="paragraph"><block ref="32e8c427ff9ed76c4f8f6c5425c12c82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d2a9afadbb6d43ee9c21ef6dc9d315f" category="list-text">提供有关适用于 ONTAP 的 FSX 实例的信息：</block>
@@ -231,9 +222,7 @@
   <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">选择一个新的卷分层策略，然后单击 * 更改 * 。</block>
   <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">复制和同步数据</block>
   <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">在系统之间复制数据</block>
-  <block id="f337ff43d209c323b3938f63f85a1802" category="paragraph">您可以使用 Cloud Manager 在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="9a75c99f0497136ee916f228db55cacf" category="inline-link-rx"></block>。</block>
   <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">创建同步关系</block>
-  <block id="755dfb4d90f88c5d06ef7f23988ca971" category="paragraph">您可以在 Cloud Manager 中使用 Cloud Sync 创建同步关系。要配置同步关系，请参见<block ref="f3020d1803625b27d288e870f5abc00a" category="inline-link-rx"></block>。</block>
   <block id="f91674f3b22216fc484532cd24dda908" category="section-title">删除卷</block>
   <block id="9497c556620605c0441cf034ff68a527" category="paragraph">删除不再需要的卷。</block>
   <block id="08d16a95ed82f881bcc5359ecb0c8769" category="paragraph">您不能使用 Cloud Manager 删除先前属于 SnapMirror 关系的卷。必须使用 AWS 管理控制台或命令行界面删除 SnapMirror 卷。</block>
@@ -463,7 +452,6 @@
   <block id="bf7ec532103402eaed4653738655f6ad" category="doc">开始使用适用于 ONTAP 的 Amazon FSX</block>
   <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。</block>
   <block id="2db8ac87c99d0b6932322889e2e22b9e" category="inline-link-macro">设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色</block>
-  <block id="43ff28b4c7690071a9a464f1a45a0fdb" category="paragraph">在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 <block ref="a7824a05bb8c139e3298b282499ce62d" category="inline-link-macro-rx"></block>。</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">适用于 AWS 的连接器</block>
   <block id="173cc3f2694be1fa38808fdd8021304c" category="paragraph">您可以使用 Cloud Manager 为 ONTAP 卷创建 FSX 。</block>
   <block id="711497cf466e121cf263849d7f648140" category="paragraph">使用 Cloud Manager 管理卷并配置其他服务，例如复制， Cloud Sync 和 Data sense 。</block>
@@ -497,4 +485,16 @@
   <block id="300de2fff5e8bf53f93ce557eb141f27" category="list-text"><block ref="300de2fff5e8bf53f93ce557eb141f27" category="inline-link-rx"></block></block>
   <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
   <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
+  <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>。</block>
+  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">您可以 <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> 在适用于 ONTAP 的 FSX 中。</block>
+  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">现在可以了 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
+  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">现在可以了 <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>。</block>
+  <block id="b84e3c9bb4ac9216f14349e3b5be8ec3" category="paragraph"><block ref="173ddc048bd16ccfb71d77420d7581cb" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7dd73bfb5bbb0ec2884525999924384" category="paragraph"><block ref="e85a369c316ea87dc3d5da27638bd157" category="inline-link-macro-rx"></block>。</block>
+  <block id="d35e6fa404873b4a616b1313e98cf3d9" category="paragraph"><block ref="6e3374d20d69610b03c5ed3fa5af9a08" category="inline-link-macro-rx"></block>。</block>
+  <block id="69bfbe4affa79598268226d5fa65599d" category="list-text">IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 <block ref="e74b530483dfdc11dbf81674fda787f8" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="20b3b63ea7f8892dc0d3f3b25bea6c49" category="list-text">如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 <block ref="e74b530483dfdc11dbf81674fda787f8" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="b2e8050cf49252f7b06bd379448c5e15" category="paragraph">您可以使用 Cloud Manager 在存储环境之间复制数据。要为 ONTAP 复制配置 FSX ，请参见<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>。</block>
+  <block id="12fc3818f5e3f781c2bf4eb8b8d50ffc" category="paragraph">您可以在 Cloud Manager 中使用 Cloud Sync 创建同步关系。要配置同步关系，请参见<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>。</block>
+  <block id="9d662ce44c324aa67c253be893864c71" category="paragraph">在添加卷之前，您必须创建适用于 ONTAP 的 Amazon FSX 工作环境。您需要 <block ref="afb5d18769390df2b32a585a478c27d2" category="inline-link-macro-rx"></block>。</block>
 </blocks>

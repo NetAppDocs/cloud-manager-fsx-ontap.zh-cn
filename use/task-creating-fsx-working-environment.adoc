@@ -23,7 +23,7 @@ summary: 通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作�
 
 在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：
 
-* IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 link:task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
+* IAM 角色的 ARN ，为 Cloud Manager 提供为 ONTAP 工作环境创建 FSX 所需的权限。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
 * 要为其创建 FSX for ONTAP 实例的区域和 VPN 信息。
 
 
@@ -39,7 +39,7 @@ image:screenshot_add_fsx_working_env.png["为适用于 ONTAP 的 Amazon FSX 添�
 +
 image:screenshot-fsx-assume-role-present.png["显示 AWS 角色下拉列表的屏幕截图"]
 
-.. 如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 link:task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
+.. 如果您的帐户中没有 IAM 角色，请单击 * 凭据页面 * ，然后按照向导中的步骤使用 FSX for ONTAP 凭据为 AWS IAM 角色添加 ARN 。请参见 link:../requirements/task-setting-up-permissions-fsx.html["将 AWS 凭据添加到 Cloud Manager"] 了解详细信息。
 +
 image:screenshot-fsx-assume-role-not-present.png["为具有 FSX for ONTAP 权限的 AWS IAM 角色添加 ARN 的步骤的屏幕截图。"]
 
