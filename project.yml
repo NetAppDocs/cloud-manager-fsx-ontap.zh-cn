@@ -25,8 +25,6 @@ sidebar:
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-  - title: 要求
-    entries:
     - title: 为适用于 ONTAP 的 FSX 设置权限
       url: "/requirements/task-setting-up-permissions-fsx.html"
     - title: 适用于 ONTAP 的 FSX 的安全组规则
@@ -57,8 +55,6 @@ homepage:
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-  - title: 要求
-    links:
     - title: 为适用于 ONTAP 的 FSX 设置权限
       url: "/requirements/task-setting-up-permissions-fsx.html"
     - title: 适用于 ONTAP 的 FSX 的安全组规则
