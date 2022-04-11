@@ -567,7 +567,7 @@
         </li>
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/zh-cn/cloud/">云文档</a>
+          <a href="https://docs.netapp.com/us-en/cloud/">云文档</a>
         </li>
         
 
@@ -605,7 +605,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 14:45:57 +0000">04/01/2022</time>
+    <time datetime="2022-04-11 16:04:44 +0000">04/11/2022</time>
     
   
 
@@ -623,13 +623,39 @@
 <h2 id="适用于-ontap-的-fsx-的规则">适用于 ONTAP 的 FSX 的规则</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>适用于 ONTAP 的 FSX 安全组需要入站和出站规则。</p>
+<p>ONTAP 的 FSX 安全组需要入站和出站规则。此图显示了适用于 ONTAP 的 FSX 网络配置和安全组要求。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/diagram-fsx-security-groups.png" alt="ONTAP 安全组配置的 FSX 示意图。"></span></p>
+</div>
+<div class="paragraph">
+<p>您需要使用 AWS 管理控制台查找与 Enis 关联的安全组。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在 AWS 管理控制台中打开适用于 ONTAP 的 FSX 文件系统，然后单击文件系统 ID 链接。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-file-system-id.png" alt="AWS 管理控制台中的 FSX 文件系统 ID 的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>在 * 网络和安全 * 选项卡上，单击首选子网或备用子网的网络接口 ID 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-eni-id.png" alt="ONTAP ENI ID 的 FSX 的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>单击网络接口表中的安全组或网络接口的 * 详细信息 * 部分。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-security-group-id.png" alt="ONTAP 安全组 ID 的 FSX 的屏幕截图。"></span></p>
+</div>
+</li>
+</ol>
 </div>
 <div class="sect2">
 <h3 id="入站规则">入站规则</h3>
-<div class="paragraph">
-<p>预定义安全组中入站规则的源代码为 0.0.0.0/0 。</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -812,7 +838,7 @@
 <div class="sect3">
 <h4 id="高级出站规则">高级出站规则</h4>
 <div class="paragraph">
-<p>如果您需要对出站流量使用严格的规则，则可以使用以下信息仅打开 ONTAP 的 FSX 出站通信所需的端口。</p>
+<p>您无需为调解器打开特定端口，也无需在适用于 ONTAP 的 FSx 中的节点之间打开特定端口。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -980,28 +1006,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">集群间 LIF</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">备份端点或还原端点</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">备份到 S3 功能的备份和还原操作</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">集群</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">所有流量</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">所有流量</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">一个节点上的所有 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">其它节点上的所有 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">集群间通信（仅限 Cloud Volumes ONTAP HA ）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">节点管理 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA 调解器</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ZAPI 调用（仅适用于 Cloud Volumes ONTAP HA ）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ICMP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">节点管理 LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA 调解器</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">保持活动状态（仅限 Cloud Volumes ONTAP HA ）</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DHCP</p></td>
@@ -1281,13 +1285,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">API 调用 AWS 和 ONTAP 、并将 AutoSupport 消息发送到 NetApp</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">API 调用</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP HA 调解器</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">与 ONTAP HA 调解器通信</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API 调用</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8088</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">备份到 S3</p></td>
