@@ -6,6 +6,7 @@ summary: 通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。
 ---
 = 开始使用适用于 ONTAP 的 Amazon FSX
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

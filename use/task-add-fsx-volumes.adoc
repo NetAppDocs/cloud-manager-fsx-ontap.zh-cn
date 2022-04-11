@@ -6,6 +6,7 @@ summary: 设置工作环境后，您可以创建和管理适用于 ONTAP 卷，�
 ---
 = 为适用于 ONTAP 的 Amazon FSX 创建卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

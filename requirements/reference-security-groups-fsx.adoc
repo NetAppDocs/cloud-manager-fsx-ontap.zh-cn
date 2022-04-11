@@ -6,6 +6,7 @@ summary: Cloud Manager 会创建 AWS 安全组，其中包含 Cloud Manager 和�
 ---
 = 适用于 ONTAP 的 FSX 的安全组规则
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

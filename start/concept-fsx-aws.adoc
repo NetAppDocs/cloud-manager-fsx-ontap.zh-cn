@@ -6,6 +6,7 @@ summary: Amazon FSX for ONTAP 是一项完全托管的服务，允许客户启�
 ---
 = 了解适用于 ONTAP 的 Amazon FSX
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 您可以使用 Cloud Manager 管理卷，克隆和快照，并更改�
 ---
 = 管理适用于 ONTAP 的 Amazon FSX 的卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

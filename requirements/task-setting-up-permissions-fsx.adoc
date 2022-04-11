@@ -6,6 +6,7 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 ---
 = 为适用于 ONTAP 的 FSX 设置权限
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
