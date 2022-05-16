@@ -451,7 +451,6 @@
   <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">创建并挂载卷</block>
   <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">管理卷和数据服务</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="6b5b1212807dea3d5cd6a3fb67f2d1d6" category="sidebar">创建和管理工作环境</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
@@ -540,4 +539,6 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">单击 * 致电我们 * 可查找 NetApp 技术支持的电话号码。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">单击 * 打开问题描述 * ，选择一个选项，然后单击 * 发送 * 。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
+  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">设置权限</block>
+  <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">安全组规则</block>
 </blocks>

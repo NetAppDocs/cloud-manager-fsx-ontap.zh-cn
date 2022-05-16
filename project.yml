@@ -49,15 +49,15 @@ homepage:
   tiles:
   - title: 入门
     links:
-    - title: 新增功能
+    - title: 发行说明
       url: "/whats-new.html"
     - title: 了解适用于 ONTAP 的 Amazon FSX
       url: "/start/concept-fsx-aws.html"
     - title: 快速入门
       url: "/start/task-getting-started-fsx.html"
-    - title: 为适用于 ONTAP 的 FSX 设置权限
+    - title: 设置权限
       url: "/requirements/task-setting-up-permissions-fsx.html"
-    - title: 适用于 ONTAP 的 FSX 的安全组规则
+    - title: 安全组规则
       url: "/requirements/reference-security-groups-fsx.html"
   - title: 使用适用于 ONTAP 的 Amazon FSx
     links:
@@ -81,4 +81,6 @@ homepage:
       url: https://cloud.netapp.com/blog
     - title: 云网络研讨会
       url: https://cloud.netapp.com/events
-product-family: {}
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
