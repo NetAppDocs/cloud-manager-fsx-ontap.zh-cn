@@ -66,4 +66,5 @@ Amazon FSX for ONTAP 是 AWS 第一方解决方案。对于与 AWS FSX 文件系
 
 * Cloud Manager 只能将数据从内部或 Cloud Volumes ONTAP 复制到适用于 ONTAP 的 FSX 。
 * 此时，可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷。
+* 目前、可以使用命令行界面从适用于ONTAP 的FSX复制SnapMirror。
 

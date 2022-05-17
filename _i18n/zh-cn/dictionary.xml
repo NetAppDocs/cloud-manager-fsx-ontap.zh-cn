@@ -541,4 +541,5 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">设置权限</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">安全组规则</block>
+  <block id="5e89288adba0036bb013893540161d9f" category="list-text">目前、可以使用命令行界面从适用于ONTAP 的FSX复制SnapMirror。</block>
 </blocks>
