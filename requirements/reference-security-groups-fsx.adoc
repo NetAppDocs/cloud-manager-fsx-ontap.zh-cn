@@ -53,10 +53,7 @@ image:screenshot-fsx-security-group-id.png["ONTAP 安全组 ID 的 FSX 的屏幕
 | 所有 ICMP | 全部 | Ping 实例 
 
 
-| HTTP | 80 | 使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问 
-
-
-| HTTPS | 443. | 使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问 
+| HTTPS | 443. | 从Connector访问fsxadmin管理LIF、以便向FSX发送API调用 
 
 
 | SSH | 22. | SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址 
