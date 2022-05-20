@@ -539,6 +539,7 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">设置权限</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">安全组规则</block>
-  <block id="5e89288adba0036bb013893540161d9f" category="list-text">目前、可以使用命令行界面从适用于ONTAP 的FSX复制SnapMirror。</block>
   <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">从Connector访问fsxadmin管理LIF、以便向FSX发送API调用</block>
+  <block id="63b0ed0469bbbea547bdb73446ef6e8f" category="inline-link-macro">支持使用ONTAP 命令行界面</block>
+  <block id="8e134e23e64a574b08ee8f4a104b33a7" category="list-text">目前、从适用于ONTAP 的FSX进行SnapMirror复制 <block ref="cab6d77018231492052744a391f5eb40" category="inline-link-macro-rx"></block>。</block>
 </blocks>
