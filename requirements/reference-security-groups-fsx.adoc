@@ -29,15 +29,15 @@ image:diagram-fsx-security-groups.png["ONTAP 安全组配置的 FSX 示意图。
 .步骤
 . 在 AWS 管理控制台中打开适用于 ONTAP 的 FSX 文件系统，然后单击文件系统 ID 链接。
 +
-image:screenshot-fsx-file-system-id.png["AWS 管理控制台中的 FSX 文件系统 ID 的屏幕截图。"]
+image:screenshot-fsx-file-system-id-zoom.png["AWS 管理控制台中的 FSX 文件系统 ID 的屏幕截图。"]
 
 . 在 * 网络和安全 * 选项卡上，单击首选子网或备用子网的网络接口 ID 。
 +
-image:screenshot-fsx-eni-id.png["ONTAP ENI ID 的 FSX 的屏幕截图。"]
+image:screenshot-fsx-eni-id-zoom.png["ONTAP ENI ID 的 FSX 的屏幕截图。"]
 
 . 单击网络接口表中的安全组或网络接口的 * 详细信息 * 部分。
 +
-image:screenshot-fsx-security-group-id.png["ONTAP 安全组 ID 的 FSX 的屏幕截图。"]
+image:screenshot-fsx-security-group-id-zoom.png["ONTAP 安全组 ID 的 FSX 的屏幕截图。"]
 
 
 
