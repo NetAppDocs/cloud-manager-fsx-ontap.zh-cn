@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
-keywords: fsx for ontap, iam, user role, permissions 
+keywords: fsx for ontap, iam, user role, permissions, aws govcloud, govcloud, credentials 
 summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要为具有 FSX for ONTAP 权限的 IAM 用户角色提供 AWS 访问密钥和机密密钥。 
 ---
 = 为适用于 ONTAP 的 FSX 设置权限
@@ -20,7 +20,7 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 
 == 设置 IAM 角色
 
-设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色。
+设置一个IAM角色、使Cloud Manager能够承担此角色。
 
 .步骤
 . 转到目标帐户中的 IAM 控制台。
@@ -30,7 +30,12 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 
 +
 ** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
-** 选择 * 其他 AWS 帐户 * 并输入 Cloud Manager SaaS 的 ID ： 952013314444
+** 选择*其他AWS帐户*并输入Cloud Manager的ID。
++
+*** 对于Cloud Manager SaaS：952013314444
+*** 对于AWS GovCloud (美国)：
+
+
 ** 创建包含以下权限的策略：
 +
 [source, json]
@@ -54,6 +59,9 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
     ]
 }
 ----
++
+从查看连接器部署策略 link:https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 策略页面"]。
+
 
 
 . 复制 IAM 角色的角色 ARN ，以便您可以在下一步将其粘贴到 Cloud Manager 中。
@@ -78,6 +86,17 @@ image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager �
 +
 .. * 凭据位置 * ：选择 * Amazon Web Services > Cloud Manager* 。
 .. * 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。
++
+[NOTE]
+====
+*** 如果您使用的是AWS GovCloud (US)帐户、请选中*我使用的是AWS GovCloud (US)帐户*。
++
+image:screenshot-govcloud-checkbox.png["GovCloud (US)帐户复选框的屏幕截图。"]
+
+*** 使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。
+
+
+====
 .. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
 
 

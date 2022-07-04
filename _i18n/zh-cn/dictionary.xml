@@ -129,11 +129,9 @@
   <block id="d0b2e405325c02e50ba6ff1e7a0bfdeb" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加凭据的屏幕截图</block>
   <block id="0c59eb935a218de10968d2478d3839c5" category="paragraph"><block ref="0c59eb935a218de10968d2478d3839c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="282e8cadc54623677e7bc13447fcac29" category="list-text">提供区域和 VPC 信息：</block>
-  <block id="f71590c4106e9e8e85fb4072cc1b8408" category="list-text">选择一个区域和子网至少位于两个可用性区域中的 VPC ，以便每个节点都位于一个专用可用性区域中。</block>
   <block id="d234e32cc579256f2dc2b1c0f46bf8ed" category="inline-link-macro">AWS 安全组</block>
   <block id="c0a56d37b9a744bb980fb63714ff853a" category="inline-link-macro">AWS 弹性网络接口（ ENI ）</block>
   <block id="70f807aec183b4123fd9e27691b549ae" category="list-text">接受默认安全组或选择其他安全组。 <block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>。</block>
-  <block id="8e21376ec8ebc45640c4648d1ea694e4" category="list-text">为每个节点选择可用性区域和子网。</block>
   <block id="02b7327efc840726659c50bf482440ba" category="inline-image-macro">为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图</block>
   <block id="e856b8b85c22d45ac9df09b76538baf0" category="paragraph"><block ref="e856b8b85c22d45ac9df09b76538baf0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8acea1c4fcca87631ca127e2bc757f13" category="inline-link">AWS 传输网关</block>
@@ -377,12 +375,10 @@
   <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">为适用于 ONTAP 的 FSX 设置权限</block>
   <block id="b84143bbdad7df35ec2c66cf2071f420" category="paragraph">要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需要通过提供 IAM 角色的 ARN 将 AWS 凭据添加到 Cloud Manager ，以便为 Cloud Manager 提供创建适用于 ONTAP 的 FSX 工作环境所需的权限。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">设置 IAM 角色</block>
-  <block id="d9a499196547b3d025fe2a7d3c56baa1" category="paragraph">设置一个 IAM 角色，使 Cloud Manager SaaS 能够承担此角色。</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">转到目标帐户中的 IAM 控制台。</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">请务必执行以下操作：</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</block>
-  <block id="7d85138efc851d16b36fe016a7d406df" category="list-text">选择 * 其他 AWS 帐户 * 并输入 Cloud Manager SaaS 的 ID ： 952013314444</block>
   <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">创建包含以下权限的策略：</block>
   <block id="e08f06cebc90d5cc269f643f2df5ab95" category="list-text">复制 IAM 角色的角色 ARN ，以便您可以在下一步将其粘贴到 Cloud Manager 中。</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">IAM 角色现在具有所需的权限。</block>
@@ -438,7 +434,6 @@
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
   <block id="80ff3e3b4817bcd801ad60d27676fed7" category="summary">适用于 NetApp ONTAP 的 Amazon FSX 将 ONTAP 的全部功能引入了原生 AWS 托管服务，可提供一致的混合云体验。本文档介绍如何使用 NetApp Cloud Manager 管理适用于 ONTAP 的 FSX 。</block>
   <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Amazon FSX for ONTAP 文档</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
   <block id="69f7f21f4fc680b59f6e889bf9547523" category="sidebar">Amazon FSX for ONTAP 文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
@@ -542,4 +537,25 @@
   <block id="74925aadd53e4f7b65df21759c37451d" category="paragraph"><block ref="74925aadd53e4f7b65df21759c37451d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f737b6b92ce7095e05c485d6d1b3acfe" category="paragraph"><block ref="f737b6b92ce7095e05c485d6d1b3acfe" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29608e98541844ed43ec551876108d97" category="paragraph"><block ref="29608e98541844ed43ec551876108d97" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
+  <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">现在、您可以选择一个或多个可用性区域HA部署模式。</block>
+  <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">创建适用于 ONTAP 的 FSX 工作环境</block>
+  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
+  <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager现在支持AWS GovCloud帐户身份验证。</block>
+  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
+  <block id="f84135b2c550b8d738093a4346ac024d" category="list-text">选择*单个可用性区域*或*多个可用性区域* HA部署模式。</block>
+  <block id="2be7f08200a1fe8660c0e3b215446b33" category="inline-image-macro">一个或多个可用性区域部署模式的选择单选按钮的屏幕截图。</block>
+  <block id="501a818c591eeaa056b0d623f83dba40" category="paragraph"><block ref="501a818c591eeaa056b0d623f83dba40" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="604034876d198af3f8d6cece2f09d984" category="list-text">选择一个区域和VPC。</block>
+  <block id="d7387928ac1cfa971f35a613cd81907c" category="paragraph">对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。</block>
+  <block id="32d764103d092c07b147433d048bb586" category="paragraph">设置一个IAM角色、使Cloud Manager能够承担此角色。</block>
+  <block id="97b63fa093616f832ba5318ba00447ce" category="list-text">选择*其他AWS帐户*并输入Cloud Manager的ID。</block>
+  <block id="81d51fac54904448b89f95abe2f40178" category="list-text">对于Cloud Manager SaaS：952013314444</block>
+  <block id="68955c28b96907f1d1f5783fd01de32e" category="list-text">对于AWS GovCloud (美国)：</block>
+  <block id="4aaa495471a5ae62d8384762205bf782" category="inline-link-macro">Cloud Manager 策略页面</block>
+  <block id="c8a9420eac272cc5ace307e15c1a05cc" category="paragraph">从查看连接器部署策略 <block ref="890ffa37b9e517890ec4308e2dc353ce" category="inline-link-macro-rx"></block>。</block>
+  <block id="a7cf2ac8ff4dd10d1e304f0abd7fe0bd" category="list-text">如果您使用的是AWS GovCloud (US)帐户、请选中*我使用的是AWS GovCloud (US)帐户*。</block>
+  <block id="045e30d9d567e729274d9202eee4ff62" category="inline-image-macro">GovCloud (US)帐户复选框的屏幕截图。</block>
+  <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。</block>
 </blocks>

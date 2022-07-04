@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones 
 summary: 通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。 
 ---
 = 创建和管理适用于 ONTAP 的 Amazon FSX 工作环境
@@ -60,13 +60,21 @@ image:screenshot_add_fsx_credentials.png["为适用于 ONTAP 的 FSX 添加凭�
 
 . 提供区域和 VPC 信息：
 +
-.. 选择一个区域和子网至少位于两个可用性区域中的 VPC ，以便每个节点都位于一个专用可用性区域中。
-.. 接受默认安全组或选择其他安全组。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
-.. 为每个节点选择可用性区域和子网。
-.. 单击 * 下一步 * 。
+.. 选择*单个可用性区域*或*多个可用性区域* HA部署模式。
 +
+image:screenshot-ha-deployment-models.png["一个或多个可用性区域部署模式的选择单选按钮的屏幕截图。"]
+
+.. 选择一个区域和VPC。
++
+[NOTE]
+====
+对于多个可用性区域、请至少选择两个可用性区域中的子网、以便每个节点都位于一个专用可用性区域中。
+
 image:screenshot_add_fsx_region.png["为适用于 ONTAP 的 FSX 添加区域和 VPC 的屏幕截图"]
 
+====
+.. 接受默认安全组或选择其他安全组。 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS 安全组"^] 控制入站和出站流量。这些设置由 AWS 管理员配置，并与关联 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]。
+.. 单击 * 下一步 * 。
 
 
 . 保留 _CIDR Range_ 为空，然后单击 * 下一步 * 以自动设置可用范围。您也可以选择使用 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS 传输网关"^] 手动配置范围。
@@ -124,13 +132,12 @@ image:screenshot_fsx_working_environment_discover.png["发现适用于 ONTAP 的
 
 . 选择现有凭据或创建新凭据。单击 * 下一步 * 。
 . 选择要添加的 AWS 区域和工作环境。
-+
-image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
-
 . 单击 * 添加 * 。
 
 
 Cloud Manager 将显示您发现的适用于 ONTAP 文件系统的 FSX 。
+
+image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
 
 
 
