@@ -33,7 +33,7 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
 ** 选择*其他AWS帐户*并输入Cloud Manager的ID。
 +
 *** 对于Cloud Manager SaaS：952013314444
-*** 对于AWS GovCloud (美国)：
+*** 对于AWS GovCloud (美国)：033442085313
 
 
 ** 创建包含以下权限的策略：
@@ -52,6 +52,7 @@ summary: 要创建或管理适用于 ONTAP 的 Amazon FSX 工作环境，您需�
                 "ec2:CreateTags",
                 "kms:Describe*",
                 "kms:List*",
+                "kms:CreateGrant",
                 "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"

@@ -551,11 +551,11 @@
   <block id="32d764103d092c07b147433d048bb586" category="paragraph">设置一个IAM角色、使Cloud Manager能够承担此角色。</block>
   <block id="97b63fa093616f832ba5318ba00447ce" category="list-text">选择*其他AWS帐户*并输入Cloud Manager的ID。</block>
   <block id="81d51fac54904448b89f95abe2f40178" category="list-text">对于Cloud Manager SaaS：952013314444</block>
-  <block id="68955c28b96907f1d1f5783fd01de32e" category="list-text">对于AWS GovCloud (美国)：</block>
   <block id="4aaa495471a5ae62d8384762205bf782" category="inline-link-macro">Cloud Manager 策略页面</block>
   <block id="c8a9420eac272cc5ace307e15c1a05cc" category="paragraph">从查看连接器部署策略 <block ref="890ffa37b9e517890ec4308e2dc353ce" category="inline-link-macro-rx"></block>。</block>
   <block id="a7cf2ac8ff4dd10d1e304f0abd7fe0bd" category="list-text">如果您使用的是AWS GovCloud (US)帐户、请选中*我使用的是AWS GovCloud (US)帐户*。</block>
   <block id="045e30d9d567e729274d9202eee4ff62" category="inline-image-macro">GovCloud (US)帐户复选框的屏幕截图。</block>
   <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。</block>
+  <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">对于AWS GovCloud (美国)：033442085313</block>
 </blocks>
