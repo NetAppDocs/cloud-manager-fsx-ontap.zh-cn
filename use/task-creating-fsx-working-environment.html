@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>创建和管理适用于 ONTAP 的 Amazon FSX 工作环境 | NetApp Documentation</title>
+  <title>创建或发现适用于ONTAP 的Amazon FSX工作环境 | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="创建和管理适用于 ONTAP 的 Amazon FSX 工作环境 | NetApp Documentation" />
+  <meta property="og:title" content="创建或发现适用于ONTAP 的Amazon FSX工作环境 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html" />
-	<meta property="og:description" content="通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。" />
+	<meta property="og:description" content="使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。">
-  <meta name="keywords" content=" amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。">
+  <meta name="keywords" content=" amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-fsx-ontap/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-fsx-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/issues/new?body=Page%3A%20[创建和管理适用于 ONTAP 的 Amazon FSX 工作环境](https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-fsx-ontap/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/blob/main/use/task-creating-fsx-working-environment.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-fsx-ontap/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-fsx-ontap/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/issues/new?body=Page%3A%20[创建或发现适用于ONTAP 的Amazon FSX工作环境](https://docs.netapp.com/zh-cn/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-fsx-ontap/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-fsx-ontap/blob/main/use/task-creating-fsx-working-environment.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-fsx-ontap/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-fsx-ontap/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -413,6 +413,8 @@
 
 
 
+
+
         </li>
       </ul>
     
@@ -506,7 +508,9 @@
         <div class="na-navbar-padding"> 使用适用于 ONTAP 的 Amazon FSx</div>
       </a>
       <ul><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
-        创建和管理工作环境
+        创建或发现工作环境
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+        管理工作环境
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         创建并挂载卷
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html">
@@ -582,14 +586,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">创建和管理适用于 ONTAP 的 Amazon FSX 工作环境</h1>
+  <h1 class="n-doc__component-detail-heading">创建或发现适用于ONTAP 的Amazon FSX工作环境</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-07-04 15:20:12 +0000">07/04/2022</time>
+    <time datetime="2022-07-31 20:02:21 +0000">07/31/2022</time>
     
   
 
@@ -602,7 +606,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>使用 Cloud Manager ，您可以创建和管理适用于 ONTAP 的 FSX 工作环境，以添加和管理卷和其他数据服务。</p>
+<p>使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。</p>
 </div>
 </div>
 </div>
@@ -743,7 +747,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>选择吞吐量，容量和单位。</p>
+<p>选择吞吐量，容量和单位。您可以随时更改吞吐量容量。</p>
 </li>
 <li>
 <p>您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。</p>
@@ -802,7 +806,59 @@
 <h2 id="发现适用于-ontap-的现有-fsx-文件系统">发现适用于 ONTAP 的现有 FSX 文件系统</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>如果您使用 AWS 管理控制台创建了适用于 ONTAP 的 FSX 文件系统，或者您希望还原之前删除的工作环境，则可以使用 Cloud Manager 发现它。</p>
+<p>如果您使用AWS管理控制台创建了适用于ONTAP 的FSX文件系统、或者希望还原之前删除的工作环境、则可以使用"我 的商机"或手动发现该环境。</p>
+</div>
+<div class="sect2">
+<h3 id="利用我的商机进行发现">利用"我的商机"进行发现</h3>
+<div class="paragraph">
+<p>如果您之前已向Cloud Manager提供AWS凭据、则*我的商机*可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在Cloud Manager中、单击*我的商机*选项卡。</p>
+</li>
+<li>
+<p>此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-opportunities.png" alt="适用于ONTAP 的FSX的&quot;我的商机&quot;页面的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="注">
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>如果选择未命名的集群、则会提示您输入集群名称。</p>
+</li>
+<li>
+<p>如果您选择的集群没有允许Cloud Manager管理适用于ONTAP 的FSX文件系统所需的凭据、则会提示您选择具有所需权限的凭据。</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="手动发现">手动发现</h3>
+<div class="paragraph">
+<p>您可以手动发现您使用AWS管理控制台添加的或先前从Cloud Manager中删除的适用于ONTAP 的FSX文件系统。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot_fsx_working_environment_select.png" alt="选择 AWS 区域和工作环境的屏幕截图"></span></p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
@@ -833,94 +889,6 @@
 <div class="paragraph">
 <p><span class="image"><img src="../media/screenshot_fsx_working_environment_select.png" alt="选择 AWS 区域和工作环境的屏幕截图"></span></p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="从工作空间中删除适用于-ontap-的-fsx">从工作空间中删除适用于 ONTAP 的 FSX</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。</p>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</p>
-</li>
-<li>
-<p>在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。</p>
-<div class="paragraph">
-<p><span class="image"><img src="../media/screenshot_fsx_working_environment_remove.png" alt="Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。"></span></p>
-</div>
-</li>
-<li>
-<p>单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="删除适用于-ontap-的-fsx-工作环境">删除适用于 ONTAP 的 FSX 工作环境</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。</p>
-</div>
-<div class="ulist">
-<div class="title">开始之前</div>
-<ul>
-<li>
-<p>您必须 <a href="task-manage-fsx-volumes.html#delete-volumes">"删除所有卷"</a> 与文件系统关联。</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="注">
-</td>
-<td class="content">
-要删除卷，您需要在 AWS 中使用活动的 Connector 。
-</td>
-</tr>
-</table>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-fsx-ontap/images/warning.svg" alt="警告">
-</td>
-<td class="content">
-此操作将删除与工作环境关联的所有资源。此操作无法撤消。
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。</p>
-</li>
-<li>
-<p>在页面右上角，选择操作菜单，然后单击 * 删除 * 。</p>
-<div class="paragraph">
-<p><span class="image"><img src="../media/screenshot_fsx_working_environment_delete.png" alt="通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。"></span></p>
-</div>
-</li>
-<li>
-<p>输入工作环境的名称，然后单击 * 删除 * 。</p>
-</li>
-</ol>
 </div>
 </div>
 </div>

@@ -407,6 +407,8 @@
           
 
 
+
+
     <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
@@ -506,7 +508,9 @@
         <div class="na-navbar-padding"> 使用适用于 ONTAP 的 Amazon FSx</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
-        创建和管理工作环境
+        创建或发现工作环境
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+        管理工作环境
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         创建并挂载卷
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html">
@@ -589,7 +593,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 07:41:09 +0000">04/18/2022</time>
+    <time datetime="2022-07-31 20:02:21 +0000">07/31/2022</time>
     
   
 
@@ -610,10 +614,7 @@
 <h2 id="创建卷">创建卷</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>您可以在 Cloud Manager 中从适用于 ONTAP 的 FSX 工作环境创建和管理 NFS 和 CIFS 卷。使用 ONTAP 命令行界面创建的 NFS 和 CIFS 卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</p>
-</div>
-<div class="paragraph">
-<p>您可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷，并在适用于 ONTAP 的 FSX 工作环境中使用 Cloud Manager 管理这些卷。</p>
+<p>您可以在Cloud Manager中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</p>
 </div>
 <div class="paragraph">
 <p>您需要：</p>
@@ -675,7 +676,7 @@
 </div>
 </li>
 <li>
-<p>* 协议 * ：选择 NFS 或 CIFS 卷协议。</p>
+<p><strong>协议</strong>：选择NFS、CIFS或iSCSI卷协议。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -714,9 +715,6 @@
 </div>
 </li>
 </ul>
-</div>
-</li>
-</ol>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -779,15 +777,39 @@
 </li>
 <li>
 <p>如果选择工作组设置，请输入为 CIFS 配置的工作组的服务器和工作组名称。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ul>
+</div>
+</li>
 <li>
-<p>单击 * 下一步 * 。</p>
+<p>对于iSCSI：您可以使用现有启动程序组或创建新启动程序组来连接LUN。要映射现有启动程序组、请选择操作系统以及一个或多个启动程序组。</p>
+<div class="paragraph">
+<p>要创建新启动程序组、请执行以下操作：</p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>选择"<strong>新建"</strong>。</p>
+</li>
+<li>
+<p>选择操作系统。</p>
+</li>
+<li>
+<p>单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html" target="_blank" rel="noopener">"将主机连接到LUN"</a>。</p>
+</li>
+<li>
+<p>输入一个"<strong>启动程序组名称"</strong>。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-volume-protocol-iscsi.png" alt="用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。"></span></p>
+</div>
 </li>
 </ol>
 </div>
 </li>
-</ul>
+<li>
+<p>单击 * 下一步 * 。</p>
+</li>
+</ol>
 </div>
 </li>
 <li>
