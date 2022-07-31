@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones 
-summary: 通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。 
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover 
+summary: 使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。 
 ---
-= 创建和管理适用于 ONTAP 的 Amazon FSX 工作环境
+= 创建或发现适用于ONTAP 的Amazon FSX工作环境
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作�
 
 
 [role="lead"]
-使用 Cloud Manager ，您可以创建和管理适用于 ONTAP 的 FSX 工作环境，以添加和管理卷和其他数据服务。
+使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。
 
 
 
@@ -91,7 +91,7 @@ image:screenshot_add_fsx_encryption.png["为适用于 ONTAP 的 FSX 设置默认
 
 . 配置存储：
 +
-.. 选择吞吐量，容量和单位。
+.. 选择吞吐量，容量和单位。您可以随时更改吞吐量容量。
 .. 您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。
 +
 
@@ -122,7 +122,37 @@ image:screenshot_add_fsx_cloud.png["工作环境页面上的 Amazon FSX for ONTA
 
 == 发现适用于 ONTAP 的现有 FSX 文件系统
 
-如果您使用 AWS 管理控制台创建了适用于 ONTAP 的 FSX 文件系统，或者您希望还原之前删除的工作环境，则可以使用 Cloud Manager 发现它。
+如果您使用AWS管理控制台创建了适用于ONTAP 的FSX文件系统、或者希望还原之前删除的工作环境、则可以使用"我 的商机"或手动发现该环境。
+
+
+
+=== 利用"我的商机"进行发现
+
+如果您之前已向Cloud Manager提供AWS凭据、则*我的商机*可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。
+
+.步骤
+. 在Cloud Manager中、单击*我的商机*选项卡。
+. 此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。
++
+image:screenshot-opportunities.png["适用于ONTAP 的FSX的\"我的商机\"页面的屏幕截图。"]
+
+. 选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。
+
+
+[NOTE]
+====
+* 如果选择未命名的集群、则会提示您输入集群名称。
+* 如果您选择的集群没有允许Cloud Manager管理适用于ONTAP 的FSX文件系统所需的凭据、则会提示您选择具有所需权限的凭据。
+
+
+====
+
+
+=== 手动发现
+
+您可以手动发现您使用AWS管理控制台添加的或先前从Cloud Manager中删除的适用于ONTAP 的FSX文件系统。
+
+image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
 
 .步骤
 . 在 Cloud Manager 中，单击 * 添加工作环境 * ，然后选择 * Amazon Web Services* 。
@@ -138,46 +168,3 @@ image:screenshot_fsx_working_environment_discover.png["发现适用于 ONTAP 的
 Cloud Manager 将显示您发现的适用于 ONTAP 文件系统的 FSX 。
 
 image:screenshot_fsx_working_environment_select.png["选择 AWS 区域和工作环境的屏幕截图"]
-
-
-
-== 从工作空间中删除适用于 ONTAP 的 FSX
-
-您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。
-
-.步骤
-. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。
-+
-image:screenshot_fsx_working_environment_remove.png["Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。"]
-
-. 单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
-
-
-
-
-== 删除适用于 ONTAP 的 FSX 工作环境
-
-您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
-
-.开始之前
-* 您必须 link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。
-
-
-
-NOTE: 要删除卷，您需要在 AWS 中使用活动的 Connector 。
-
-* 您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。
-
-
-
-WARNING: 此操作将删除与工作环境关联的所有资源。此操作无法撤消。
-
-.步骤
-. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
-. 在页面右上角，选择操作菜单，然后单击 * 删除 * 。
-+
-image:screenshot_fsx_working_environment_delete.png["通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。"]
-
-. 输入工作环境的名称，然后单击 * 删除 * 。
-

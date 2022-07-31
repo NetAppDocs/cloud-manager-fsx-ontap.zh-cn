@@ -20,9 +20,7 @@ summary: 设置工作环境后，您可以创建和管理适用于 ONTAP 卷，�
 
 == 创建卷
 
-您可以在 Cloud Manager 中从适用于 ONTAP 的 FSX 工作环境创建和管理 NFS 和 CIFS 卷。使用 ONTAP 命令行界面创建的 NFS 和 CIFS 卷也会显示在适用于 ONTAP 的 FSX 工作环境中。
-
-您可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷，并在适用于 ONTAP 的 FSX 工作环境中使用 Cloud Manager 管理这些卷。
+您可以在Cloud Manager中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。
 
 您需要：
 
@@ -53,7 +51,7 @@ image:screenshot_fsx_volume_details.png["用于创建 ONTAP 卷的 FSX 的卷详
 
 
 
-. * 协议 * ：选择 NFS 或 CIFS 卷协议。
+. *协议*：选择NFS、CIFS或iSCSI卷协议。
 +
 .. 对于 NFS ：
 +
@@ -105,6 +103,20 @@ TIP: 如果这是此工作环境中的第一个 CIFS 卷，则系统将提示您
 | NTP 服务器 | 选择 * 启用 NTP 服务器配置 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自动化文档"^] 了解详细信息。 
 |===
 *** 如果选择工作组设置，请输入为 CIFS 配置的工作组的服务器和工作组名称。
+
+
+.. 对于iSCSI：您可以使用现有启动程序组或创建新启动程序组来连接LUN。要映射现有启动程序组、请选择操作系统以及一个或多个启动程序组。
++
+要创建新启动程序组、请执行以下操作：
+
++
+... 选择"*新建"*。
+... 选择操作系统。
+... 单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html["将主机连接到LUN"^]。
+... 输入一个"*启动程序组名称"*。
++
+image:screenshot-volume-protocol-iscsi.png["用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。"]
+
 
 
 .. 单击 * 下一步 * 。

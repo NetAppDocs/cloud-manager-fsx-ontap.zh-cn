@@ -34,8 +34,6 @@
   <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">为适用于 ONTAP 的 Amazon FSX 创建卷</block>
   <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">设置工作环境后，您可以为 ONTAP 卷创建和挂载 FSX 。</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">创建卷</block>
-  <block id="59882fc1ce16f5b47ed90394ec3dcd4a" category="paragraph">您可以在 Cloud Manager 中从适用于 ONTAP 的 FSX 工作环境创建和管理 NFS 和 CIFS 卷。使用 ONTAP 命令行界面创建的 NFS 和 CIFS 卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</block>
-  <block id="3c5b27df21b3db8fbf99260b6111c620" category="paragraph">您可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷，并在适用于 ONTAP 的 FSX 工作环境中使用 Cloud Manager 管理这些卷。</block>
   <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">您需要：</block>
   <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">AWS 中的连接器</block>
   <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS ：使用自管理 Microsoft AD 的前提条件</block>
@@ -57,7 +55,6 @@
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
   <block id="4b1ceb73f69790897d4632ba712c7659" category="inline-image-macro">用于创建 ONTAP 卷的 FSX 的卷详细信息和保护字段的屏幕截图。</block>
   <block id="5d40ada61a97a98ef6bc45b298d20ee3" category="paragraph"><block ref="5d40ada61a97a98ef6bc45b298d20ee3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bf6c6b2753126136892e2e302ab0f03d" category="list-text">* 协议 * ：选择 NFS 或 CIFS 卷协议。</block>
   <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">对于 NFS ：</block>
   <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">选择访问控制策略。</block>
   <block id="b07a5c1cd32beac9e88c78df72edc8ec" category="list-text">选择 NFS 版本。</block>
@@ -103,9 +100,6 @@
   <block id="958a7394acfcee5d86c01e758be4f1c2" category="inline-image-macro">打开卷菜单时可用操作的屏幕截图。</block>
   <block id="54b1fe05786347782bfe7e4a3e5de355" category="paragraph"><block ref="54b1fe05786347782bfe7e4a3e5de355" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38aa5b57f82843fe74bb954a343bf4e0" category="list-text">按照说明挂载卷。</block>
-  <block id="45cc32a4d53a1360b7ced005a212045b" category="summary">通过 Cloud Manager ，您可以创建适用于 ONTAP 的 FSX 工作环境，以添加卷并管理其他数据服务。</block>
-  <block id="fdd19953ce3013e133d600a251e48a61" category="doc">创建和管理适用于 ONTAP 的 Amazon FSX 工作环境</block>
-  <block id="11eed266884d218184bb4e52689ebf4d" category="paragraph">使用 Cloud Manager ，您可以创建和管理适用于 ONTAP 的 FSX 工作环境，以添加和管理卷和其他数据服务。</block>
   <block id="54e54adb33e337b5c804d6820b674b9a" category="inline-link-macro">使用 Cloud Manager 发现它</block>
   <block id="e5375c42110b0016231f311272774e83" category="paragraph">第一步是为 ONTAP 工作环境创建 FSX 。如果您已在 AWS 管理控制台中创建了适用于 ONTAP 的 FSX 文件系统，则可以 <block ref="6a48f5b54424256e49232bb9af7a3d2f" category="inline-link-macro-rx"></block>。</block>
   <block id="faa4b07ffa49aaead3b9217354fd2e07" category="paragraph">在 Cloud Manager 中创建适用于 ONTAP 的 FSX 工作环境之前，您需要：</block>
@@ -145,7 +139,6 @@
   <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">为适用于 ONTAP 的 FSX 设置默认主密钥的屏幕截图</block>
   <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">配置存储：</block>
-  <block id="552d35e7f28ee648c54813ab02c7dcb6" category="list-text">选择吞吐量，容量和单位。</block>
   <block id="44c0eb6e7e1c5fab261de20248c94791" category="list-text">您也可以指定 IOPS 值。如果未指定 IOPS 值， Cloud Manager 将根据输入的总容量的每 GiB 3 个 IOPS 设置默认值。例如，如果您输入 2000 GiB 作为总容量，而不输入 IOPS 值，则有效 IOPS 值将设置为 6000 。</block>
   <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">如果设置的 IOPS 值不正确，则显示错误消息的屏幕截图。</block>
   <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">如果您指定的 IOPS 值不符合最低要求，则在添加工作环境时将收到错误。<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
@@ -162,7 +155,6 @@
   <block id="26682ff9a292960b61e97b937520b135" category="paragraph"><block ref="26682ff9a292960b61e97b937520b135" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11fa7924f258843d0c6a8377f70c698c" category="paragraph">现在，您可以使用 Cloud Manager 将卷添加到适用于 ONTAP 的 FSX 工作环境中。</block>
   <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">发现适用于 ONTAP 的现有 FSX 文件系统</block>
-  <block id="5a31f364855ed7d093e5ff0c2d6a0a6f" category="paragraph">如果您使用 AWS 管理控制台创建了适用于 ONTAP 的 FSX 文件系统，或者您希望还原之前删除的工作环境，则可以使用 Cloud Manager 发现它。</block>
   <block id="3eb13290c3d1e4b57acf05410a485779" category="list-text">在 Cloud Manager 中，单击 * 添加工作环境 * ，然后选择 * Amazon Web Services* 。</block>
   <block id="6800849898be1086bb69e4658dd59629" category="list-text">选择 * 适用于 ONTAP 的 Amazon FSx * ，然后单击 * 单击此处 * 。</block>
   <block id="e574e1da19f282b48ebb67c362fbc5cc" category="inline-image-macro">发现适用于 ONTAP 的 Amazon FSX 的工作环境的屏幕截图</block>
@@ -420,8 +412,6 @@
   <block id="1db5f4a1a813c32af28e132cf45cac0f" category="paragraph">对于 Cloud Manager 或 Cloud Manager 微服务特有的一般问题，您可以从在线 Cloud Manager 聊天开始。</block>
   <block id="409924e4cb5560dcfd0701e1ac237826" category="paragraph">对于 Cloud Manager 或中的微服务特有的技术支持问题，您可以使用 Cloud Manager 帐户级别序列号打开 NetApp 支持服务单。您需要注册 Cloud Manager 序列号才能激活支持。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
-  <block id="0fad775ed670ca6bde434fb3d471a64d" category="list-text">Cloud Manager 只能将数据从内部或 Cloud Volumes ONTAP 复制到适用于 ONTAP 的 FSX 。</block>
-  <block id="067fe115499332ebd701781ed653d1f8" category="list-text">此时，可以使用 ONTAP 命令行界面， ONTAP API 或 Cloud Manager API 创建 iSCSI 卷。</block>
   <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">通过几个步骤开始使用适用于 ONTAP 的 Amazon FSx 。</block>
   <block id="bf7ec532103402eaed4653738655f6ad" category="doc">开始使用适用于 ONTAP 的 Amazon FSX</block>
   <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">只需几个步骤，即可开始使用适用于 ONTAP 的 FSX 。</block>
@@ -440,11 +430,9 @@
   <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">了解适用于 ONTAP 的 FSX</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
   <block id="767c313289c6f36a3348709b853c6020" category="sidebar">使用适用于 ONTAP 的 Amazon FSx</block>
-  <block id="b717787f66ea65a295fc51e1e85baeb1" category="sidebar">创建和管理工作环境</block>
   <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">创建并挂载卷</block>
   <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">管理卷和数据服务</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="6b5b1212807dea3d5cd6a3fb67f2d1d6" category="sidebar">创建和管理工作环境</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
@@ -558,4 +546,56 @@
   <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">使用AWS GovCloud进行身份验证将禁用SaaS平台。这是对您的帐户的永久更改、无法撤消。</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">对于AWS GovCloud (美国)：033442085313</block>
+  <block id="c3948e9af2286480c185296c8233504b" category="summary">使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。</block>
+  <block id="56741382a48f0ad5efb57a6532876317" category="doc">创建或发现适用于ONTAP 的Amazon FSX工作环境</block>
+  <block id="ce077de6f3a969e5aa4cd26e1b3b5793" category="paragraph">使用Cloud Manager、您可以创建或发现适用于ONTAP 的FSX工作环境、以添加和管理卷和其他数据服务。</block>
+  <block id="1854a29768044309b55fe7b58108c6b2" category="list-text">选择吞吐量，容量和单位。您可以随时更改吞吐量容量。</block>
+  <block id="a856a2e7ff7a861c3124938689a66a62" category="paragraph">如果您使用AWS管理控制台创建了适用于ONTAP 的FSX文件系统、或者希望还原之前删除的工作环境、则可以使用"我 的商机"或手动发现该环境。</block>
+  <block id="1b52b643a7dc88400af8fd712fed3d12" category="section-title">利用"我的商机"进行发现</block>
+  <block id="2727507bf62cbd85fbf2b9c615630c53" category="paragraph">如果您之前已向Cloud Manager提供AWS凭据、则*我的商机*可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以查看可用的数据服务。</block>
+  <block id="748e7605a5624d9bdbf81964bc29f2e4" category="list-text">在Cloud Manager中、单击*我的商机*选项卡。</block>
+  <block id="e9ba45e021b291739ba996c9cde18a78" category="list-text">此时将显示已发现的ONTAP 文件系统FSX计数。单击*发现*。</block>
+  <block id="7208d8184b0d0e6e3c7bcf475c8f9bd2" category="inline-image-macro">适用于ONTAP 的FSX的"我的商机"页面的屏幕截图。</block>
+  <block id="9e4da126e3095f89c00bb676d98195d8" category="paragraph"><block ref="9e4da126e3095f89c00bb676d98195d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b4a4c841d4545b117e4104be254a0e8" category="list-text">选择一个或多个文件系统、然后单击*发现*将其添加到"画布"中。</block>
+  <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">如果选择未命名的集群、则会提示您输入集群名称。</block>
+  <block id="288a9d1552741aacac0fe590629b3a7e" category="list-text">如果您选择的集群没有允许Cloud Manager管理适用于ONTAP 的FSX文件系统所需的凭据、则会提示您选择具有所需权限的凭据。</block>
+  <block id="1d064916590560310250a3e94aec4539" category="section-title">手动发现</block>
+  <block id="93961f8d67912180ee53e84885a6e38b" category="paragraph">您可以手动发现您使用AWS管理控制台添加的或先前从Cloud Manager中删除的适用于ONTAP 的FSX文件系统。</block>
+  <block id="9ac28c312ffcaefaeb68547b62383018" category="paragraph">您可以在Cloud Manager中从适用于ONTAP 的FSX工作环境创建和管理NFS、CIFS和iSCSI卷。使用 ONTAP 命令行界面创建的卷也会显示在适用于 ONTAP 的 FSX 工作环境中。</block>
+  <block id="c0beac119c78b8228ca36d4b93ef1bc7" category="list-text">*协议*：选择NFS、CIFS或iSCSI卷协议。</block>
+  <block id="7a641f2010297c1d06c28aad18308a5b" category="list-text">对于iSCSI：您可以使用现有启动程序组或创建新启动程序组来连接LUN。要映射现有启动程序组、请选择操作系统以及一个或多个启动程序组。</block>
+  <block id="7d7217d548e427bd0d76f5081e4b4cb5" category="paragraph">要创建新启动程序组、请执行以下操作：</block>
+  <block id="6ae6d068572461cadd78494cd3954770" category="list-text">选择"*新建"*。</block>
+  <block id="6439f651e3ce60a787666dc41a8ca17f" category="list-text">选择操作系统。</block>
+  <block id="16125dd1e69c3f67387e091dfbdb0104" category="inline-link-macro">将主机连接到LUN</block>
+  <block id="4829537a55a4319514ecedacd16c615c" category="list-text">单击以添加一个或多个主机iSCSI限定名称(IQN)。您可以选择现有IQN或添加新IQN。有关如何查找卷的IQN的详细信息、请参见 <block ref="ea6aa66bd7959c06552c511c78fe80e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ecfc70ae41156684ed148266abaf3a62" category="list-text">输入一个"*启动程序组名称"*。</block>
+  <block id="ccb9a070caab16c4e464e89fd6afe362" category="inline-image-macro">用于创建ONTAP 卷的iSCSI配置FSX的屏幕截图。</block>
+  <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a20dc51cbd898b34e33a20c14094ed53" category="summary">您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。</block>
+  <block id="faac9e60f93091e9068b8f347b36ec75" category="doc">管理适用于ONTAP 的Amazon FSX工作环境</block>
+  <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">更改吞吐量容量</block>
+  <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。</block>
+  <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">您需要一个活动的<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>。</block>
+  <block id="753a4005737100e35c99c30e52ef2c44" category="list-text">在*概述*选项卡中、单击*功能*。</block>
+  <block id="2e68dd5f8760ab98fc603405ef786ad2" category="inline-image-macro">通过"hgput capacity"菜单显示更改位置的屏幕截图。</block>
+  <block id="ba4f4a5f2fc20fe299d66d82a707dcfa" category="paragraph"><block ref="ba4f4a5f2fc20fe299d66d82a707dcfa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">铅笔编辑图标的图像。</block>
+  <block id="956ab3e11e7c49feef0401b3df8ea2ef" category="list-text">单击铅笔图标(<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>)打开*吞吐量容量*编辑页面。</block>
+  <block id="3ce3cdf8360d5fadb6de611684221e5f" category="list-text">从下拉列表中选择一个新的吞吐量容量、然后单击*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。</block>
+  <block id="f6dfc77133ec0d2399d3f1b82fd008fe" category="list-text">目前、Cloud Manager可以将数据从内部或Cloud Volumes ONTAP 复制到适用于ONTAP 的FSX、以及从适用于ONTAP 的FSX复制到适用于ONTAP 系统的内部或其他FSX。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">利用"我的商机"发现适用于ONTAP 的FSX</block>
+  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">更改吞吐量容量</block>
+  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">您现在可以： <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">复制和同步数据</block>
+  <block id="2e54b9a897181c7862d708807a350694" category="list-text">您现在可以： <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
+  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">您现在可以： <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">创建或发现工作环境</block>
+  <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">管理工作环境</block>
+  <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">管理工作环境</block>
 </blocks>

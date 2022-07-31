@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-working-environment.html 
+keywords: amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, 
+summary: 您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。 
+---
+= 管理适用于ONTAP 的Amazon FSX工作环境
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过Cloud Manager管理适用于ONTAP 的FSX工作环境。您可以通过hgput capcity进行更改、并删除或删除工作环境。
+
+
+
+== 更改吞吐量容量
+
+在创建适用于ONTAP 的FSX工作环境之后、您可以随时更改吞吐量容量。
+
+您需要一个活动的 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS 中的连接器"^]。
+
+.步骤
+. 打开适用于 ONTAP 的 FSX 工作环境。
+. 在*概述*选项卡中、单击*功能*。
++
+image:screenshot-change-thruput.png["通过\"hgput capacity\"菜单显示更改位置的屏幕截图。"]
+
+. 单击铅笔图标(image:icon-pencil.png["铅笔编辑图标的图像。"])打开*吞吐量容量*编辑页面。
+. 从下拉列表中选择一个新的吞吐量容量、然后单击*更新*。此更改可能需要长达25分钟才能生效、并且不会中断数据访问。
+
+
+
+
+== 从工作空间中删除适用于 ONTAP 的 FSX
+
+您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX ，而无需删除适用于 ONTAP 的 FSX 帐户或卷。您可以随时将适用于 ONTAP 的 FSX 工作环境重新添加到 Cloud Manager 中。
+
+.步骤
+. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
+. 在页面右上角，选择操作菜单，然后单击 * 从工作空间中删除 * 。
++
+image:screenshot_fsx_working_environment_remove.png["Cloud Manager 界面中 FSX for ONTAP 的删除选项的屏幕截图。"]
+
+. 单击 * 删除 * 以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
+
+
+
+
+== 删除适用于 ONTAP 的 FSX 工作环境
+
+您可以从 Cloud Manager 中删除适用于 ONTAP 的 FSX 。
+
+.开始之前
+* 您必须 link:task-manage-fsx-volumes.html#delete-volumes["删除所有卷"] 与文件系统关联。
+
+
+
+NOTE: 要删除卷，您需要在 AWS 中使用活动的 Connector 。
+
+* 您不能删除包含故障卷的工作环境。在删除适用于 ONTAP 文件系统的 FSX 之前，必须使用 AWS 管理控制台或命令行界面删除故障卷。
+
+
+
+WARNING: 此操作将删除与工作环境关联的所有资源。此操作无法撤消。
+
+.步骤
+. 打开工作环境。如果您在 AWS 中没有 Connector ，则会看到提示屏幕。您可以忽略此问题并继续删除工作环境。
+. 在页面右上角，选择操作菜单，然后单击 * 删除 * 。
++
+image:screenshot_fsx_working_environment_delete.png["通过 Cloud Manager 界面为 ONTAP 的 FSX 删除选项提供的屏幕截图。"]
+
+. 输入工作环境的名称，然后单击 * 删除 * 。
+

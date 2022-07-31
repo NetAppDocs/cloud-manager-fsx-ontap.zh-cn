@@ -26,8 +26,10 @@ sidebar:
       url: "/requirements/reference-security-groups-fsx.html"
   - title: 使用适用于 ONTAP 的 Amazon FSx
     entries:
-    - title: 创建和管理工作环境
+    - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"
+    - title: 管理工作环境
+      url: "/use/task-manage-working-environment.html"
     - title: 创建并挂载卷
       url: "/use/task-add-fsx-volumes.html"
     - title: 管理卷和数据服务
@@ -56,8 +58,10 @@ homepage:
       url: "/requirements/reference-security-groups-fsx.html"
   - title: 使用适用于 ONTAP 的 Amazon FSx
     links:
-    - title: 创建和管理工作环境
+    - title: 创建或发现工作环境
       url: "/use/task-creating-fsx-working-environment.html"
+    - title: 管理工作环境
+      url: "/use/task-manage-working-environment.html"
     - title: 创建并挂载卷
       url: "/use/task-add-fsx-volumes.html"
     - title: 管理卷和数据服务
